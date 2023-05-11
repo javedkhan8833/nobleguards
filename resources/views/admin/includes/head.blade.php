@@ -14,6 +14,14 @@
   <link rel="stylesheet" type="text/css" href="{{asset('admin/js/select.dataTables.min.css')}}">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
+
+   <!-- Plugin css for this page -->
+   <link rel="stylesheet" href="{{asset('admin/vendors/select2/select2.min.css')}}">
+   <link rel="stylesheet" href="{{asset('admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css')}}">
+   <!-- End plugin css for this page -->
+   <!-- inject:css -->
+   <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
+   <!-- endinject -->
   <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}?v={{time()}}" />
