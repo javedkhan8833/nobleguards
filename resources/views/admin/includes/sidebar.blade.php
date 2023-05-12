@@ -15,10 +15,6 @@
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{route('admin.about.index')}}">About</a></li>
-            {{-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Our Aim</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Our Values</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">What is STS?</a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Next Days Results</a></li> --}}
           </ul>
         </div>
       </li>
@@ -31,6 +27,18 @@
         <div class="collapse" id="form-elements">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"><a class="nav-link" href="{{route('admin.faq.index')}}">FAQs list</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+          <i class="icon-columns menu-icon"></i>
+          <span class="menu-title">Slider</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="form-elements">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"><a class="nav-link" href="{{route('admin.slider.index')}}">Sliders List</a></li>
           </ul>
         </div>
       </li>

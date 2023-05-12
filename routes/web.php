@@ -5,7 +5,9 @@ use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\admin\AboutController;
+use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\website\MainController;
+use App\Http\Controllers\website\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,15 +40,24 @@ Route::get('/admin/faq/edit/{id}',[FaqController::class,'edit'])->name('admin.fa
 Route::post('/admin/faq/update/{id}',[FaqController::class,'update'])->name('admin.faq.update');
 Route::get('/admin/faq/delete/{id}',[FaqController::class,'delete'])->name('admin.faq.delete');
 
-
+//slider routes
+Route::get('/admin/slider/index',[SliderController::class,'index'])->name('admin.slider.index');
+Route::get('/admin/slider/create',[SliderController::class,'create'])->name('admin.slider.create');
+Route::post('/admin/slider/store',[SliderController::class,'store'])->name('admin.slider.store');
+Route::get('/admin/slider/edit/{id}',[SliderController::class,'edit'])->name('admin.slider.edit');
+Route::post('/admin/slider/update/{id}',[SliderController::class,'update'])->name('admin.slider.update');
+Route::get('/admin/slider/delete/{id}',[SliderController::class,'delete'])->name('admin.slider.delete');
 //website routes
 Route::get('/home', [MainController::class,'index'])->name('main');
 Route::get('/about', [MainController::class,'about'])->name('about');
 Route::get('/contact', [MainController::class,'contact'])->name('contact');
+Route::post('/contactus',[MainController::class,'store'])->name('findus');
 Route::get('/courses', [MainController::class,'selectCourse'])->name('courses');
 Route::get('/initial', [MainController::class,'initial'])->name('firstpage');
 Route::get('/services', function(){
     return view('website.pages.services');
 })->name('services');
+
+// Route::post('/contactus',[ContactController::class,'store'])->name('findus');
 
 
