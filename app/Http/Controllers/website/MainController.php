@@ -19,18 +19,6 @@ class MainController extends Controller
     {
         return view('website.pages.contactus');
     }
-    public function store(Request $request)
-        {
-            dd('hi');
-            // dd($request->all());
-            $data = $request->validate([
-                'name' =>'required',
-                'email' =>'required',
-                'subject'=>'required',
-                'message'=>'required',
-            ]);
-
-        }
     public function selectCourse()
     {
         return view('website.pages.courses');

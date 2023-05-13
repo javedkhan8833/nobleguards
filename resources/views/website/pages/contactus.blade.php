@@ -61,8 +61,11 @@
             </div>
 
             <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-
-                <form action="{{route('findus')}}" method="post" role="form" class="php-email-form">
+                {{-- <form action="{{route('findus')}}" method="post">
+                    <input type="text" name="name">
+                    <input type="submit" value="Find">
+                </form> --}}
+                 <form action="{{route('findus')}}" method="post" role="form" class="form-css">
                     @csrf
                     <div class="row">
                         <div class="col-md-6 form-group">

@@ -5,6 +5,7 @@ use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\admin\AboutController;
+use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\website\MainController;
 use App\Http\Controllers\website\ContactController;
@@ -47,17 +48,18 @@ Route::post('/admin/slider/store',[SliderController::class,'store'])->name('admi
 Route::get('/admin/slider/edit/{id}',[SliderController::class,'edit'])->name('admin.slider.edit');
 Route::post('/admin/slider/update/{id}',[SliderController::class,'update'])->name('admin.slider.update');
 Route::get('/admin/slider/delete/{id}',[SliderController::class,'delete'])->name('admin.slider.delete');
+//contact us routes on admin side
+Route::get('/admin/contacted',[HomeController::class,'contact'])->name('admin.contactus.contacted');
 //website routes
 Route::get('/home', [MainController::class,'index'])->name('main');
 Route::get('/about', [MainController::class,'about'])->name('about');
 Route::get('/contact', [MainController::class,'contact'])->name('contact');
-Route::post('/contactus',[MainController::class,'store'])->name('findus');
 Route::get('/courses', [MainController::class,'selectCourse'])->name('courses');
 Route::get('/initial', [MainController::class,'initial'])->name('firstpage');
 Route::get('/services', function(){
     return view('website.pages.services');
 })->name('services');
 
-// Route::post('/contactus',[ContactController::class,'store'])->name('findus');
+Route::post('/contactus',[ContactController::class,'store'])->name('findus');
 
 
