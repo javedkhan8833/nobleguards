@@ -12,9 +12,6 @@
                 <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
                 <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
             </div>
-            <div class="cta d-none d-md-block">
-                <a href="{{route('firstpage')}}" class="scrollto">Register/Login</a>
-            </div>
         </div>
     </div>
 

@@ -31,9 +31,20 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> --}}
-          <li><a class="nav-link scrollto" href="{{route('contact')}}">Find us</a></li>
-
-            </ul>
+          <li><a class="nav-link scrollto" href="{{route('contact')}}">Find us</a>
+          </li>
+          <li>
+            <button style="
+            background-color: #f7a234;
+            border-style: none;
+            border-radius: 25px;
+            padding: 15px;
+            ">
+            <a href="{{route('firstpage')}}">Register/Login</a>
+            </button>
+          </li>
+          </ul>
+        
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
