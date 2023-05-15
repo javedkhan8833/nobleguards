@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="style.css">
+
 
 @include('website.includes.head')
 

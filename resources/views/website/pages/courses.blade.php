@@ -5,18 +5,25 @@
 <section id="cta" class="cta">
     <div class="container">
 
-        <div class="row" data-aos="zoom-in">
-            <div class="col-lg-9 text-center text-lg-start">
-                <h3>New SIA Course Updates (April 2021)</h3>
-                <p> As of April 1, Door Supervision course is a 6 day course instead of a 4 day course. Moreover,
+        <div class="row col-lg-12 text-lg-start mt-lg-5" data-aos="zoom-in">
+            
+                <h3 Class="text-center">New SIA Course Updates (April 2021)</h3>
+                <p Class="text-center"> As of April 1, Door Supervision course is a 6 day course instead of a 4 day course. Moreover,
                     you must have a First Aid Qualification before you can take the training. This should be an
                     Emergency First Aid at Work (EFAW) certificate or higher.</p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-                <p>Enrol on a course today</p>
-                <a class="cta-btn align-middle" href="#">Courses</a>
-            </div>
+            
         </div>
+
+        <div class="row" data-aos="zoom-in">
+          <button type="button" class=" btn btn-lg  ">
+                <!-- <p>Enrol on a course today</p> -->
+                <a class="cta-btn align-middle px-sm-5 " href="#">Enrol on a Courses today</a>
+          </button>
+        </div>
+
+
+
+
 
     </div>
 </section>
@@ -30,76 +37,62 @@
       </div>
 
       <div class="row">
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="box">
-            <h3>Free</h3>
-            <h4><sup>$</sup>0<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
+        <div class="box-item">
+          <div class="flip-box">
+            <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+              <div class="inner color-white">
+                <h3 class="flip-box-header">Never Sleeps</h3>
+                  <p>A short sentence describing this callout is.</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
             </div>
+              </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Never Sleeps</h3>
+                      <p>A short sentence describing this callout is.</p>
+                      <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="box featured">
-            <h3>Business</h3>
-            <h4><sup>$</sup>19<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li>Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
+        <div class="box-item">
+          <div class="flip-box">
+            <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+              <div class="inner color-white">
+                <h3 class="flip-box-header">Never Sleeps</h3>
+                  <p>A short sentence describing this callout is.</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
             </div>
+              </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Never Sleeps</h3>
+                      <p>A short sentence describing this callout is.</p>
+                      <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <div class="box">
-            <h3>Developer</h3>
-            <h4><sup>$</sup>29<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li>Pharetra massa</li>
-              <li>Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
+        <div class="box-item">
+          <div class="flip-box">
+            <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+              <div class="inner color-white">
+                <h3 class="flip-box-header">Never Sleeps</h3>
+                  <p>A short sentence describing this callout is.</p>
+                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
             </div>
+              </div>
+                <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">Never Sleeps</h3>
+                      <p>A short sentence describing this callout is.</p>
+                      <button class="flip-box-button">Learn More</button>
+                  </div>
+                </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-          <div class="box">
-            <span class="advanced">Advanced</span>
-            <h3>Ultimate</h3>
-            <h4><sup>$</sup>49<span> / month</span></h4>
-            <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li>Pharetra massa</li>
-              <li>Massa ultricies mi</li>
-            </ul>
-            <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </div>

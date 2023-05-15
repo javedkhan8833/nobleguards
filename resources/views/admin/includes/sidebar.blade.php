@@ -49,7 +49,7 @@
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
           <i class="icon-bar-graph menu-icon"></i>
-          <span class="menu-title">Contact us</span>
+          <span class="menu-title">Con</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="charts">
