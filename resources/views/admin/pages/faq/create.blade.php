@@ -1,33 +1,56 @@
 @extends('admin.layouts.layout')
 @section('content')
-<div class="col-12 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">FAQ's of Noble Guards</h4>
-        <p class="card-description">
-           Frequnetly Asked Questions Sbout Noble Guards
-        </p>
-        <form class="forms-sample" action="{{route('admin.faq.store')}}" method="post">
-            @csrf
-          <div class="form-group">
-            <label for="exampleInputName1">Question</label>
-            <input type="text" name="title" class="form-control"  placeholder="Qustion?">
-            @error('title')
-                <span class="text text-danger"> {{$message}}</span>
-            @enderror
-          </div>
-
-          <div class="form-group">
-            <label for="exampleTextarea1">Answer</label>
-            <textarea class="form-control" name="description" rows="4"></textarea>
-          </div>
-          @error('description')
-              <span class="text text-danger"> {{$message}}</span>
-          @enderror
-          <button type="submit" class="btn btn-primary mr-2">Save</button>
-          <button class="btn btn-light">Cancel</button>
-        </form>
-      </div>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">FAQs</a></li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                    <li class="breadcrumb-item active">Frequently Asks Questions? </li>
+                </ol>
+            </div>
+            <h4 class="page-title">FAQs Form</h4>
+        </div>
     </div>
-  </div>
+</div>
+<!-- end page title -->
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="input-types-preview">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form action="{{route('admin.faq.store')}}" method="post">
+                                    @csrf
+                                    <div class="mb-3">
+                                        <label for="simpleinput" class="form-label">Question ?</label>
+                                        <input type="text" name="title" id="simpleinput" class="form-control">
+                                        @error('title')
+                                        <span class="text text-danger"> {{$message}}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="example-textarea" class="form-label">Answer</label>
+                                        <textarea name="description" class="form-control" id="example-textarea" rows="5"></textarea>
+                                        @error('description')
+                                        <span class="text text-danger"> {{$message}}</span>
+                                        @enderror
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a href="{{route('admin.faq.index')}}" class="btn btn-light">Cancel</a>
+                                </form>
+                            </div> <!-- end tab-content-->
+
+                        </div> <!-- end card-body -->
+                    </div> <!-- end card -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div>
+</div>
+</div>
 @endsection
