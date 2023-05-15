@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\website;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
+use App\Models\Refer;
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class ReferController extends Controller
 {
-        public function store(Request $request)
+    public function store(Request $request)
         {
             // dd($request->all());
             // $data = $request->validate([
@@ -17,17 +17,19 @@ class ContactController extends Controller
             //     'subject'=>'required',
             //     'message'=>'required',
             // ]);
+
             $data = [
                 'name' => $request->name,
                 'email' => $request->email,
                 'phone' => $request->phone,
-                'subject'=>$request->subject,
-                'message'=>$request->message
+                'referedName'=>$request->referedName,
+                'referedEmail'=>$request->referedEmail,
+                'referedPhone'=>$request->referedPhone,
             ];
-            $query = Contact::create($data);
+            $query = Refer::create($data);
             if($query)
             {
-                return redirect()->back()->with('success', 'Message Sent Successfully');
+                return redirect()->back()->with('success', 'Refered Sent Successfully');
             }
             else{
                 return redirect()->back()->with('error','something went wrong');

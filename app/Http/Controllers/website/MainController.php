@@ -27,5 +27,9 @@ class MainController extends Controller
     {
         return view('website.pages.firstpage');
     }
+    public function referFriend()
+    {
+        return view('website.pages.refer_a_friend');
+    }
 
 }

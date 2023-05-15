@@ -210,7 +210,7 @@
 
                     <div class="accordion-list">
                         <ul>
-                            <a href="#" class="btn btn-primary">Refer a Friend</a>
+                            <a href="{{route('refer')}}" class="btn btn-primary">Refer a Friend</a>
                         </ul>
                     </div>
 

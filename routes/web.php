@@ -9,6 +9,7 @@ use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\website\MainController;
 use App\Http\Controllers\website\ContactController;
+use App\Http\Controllers\website\ReferController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +57,8 @@ Route::get('/about', [MainController::class,'about'])->name('about');
 Route::get('/contact', [MainController::class,'contact'])->name('contact');
 Route::get('/courses', [MainController::class,'selectCourse'])->name('courses');
 Route::get('/initial', [MainController::class,'initial'])->name('firstpage');
+Route::get('/refer/friend', [MainController::class,'referFriend'])->name('refer');
+Route::post('/refered/friends', [ReferController::class,'store'])->name('refered');
 Route::get('/services', function(){
     return view('website.pages.services');
 })->name('services');

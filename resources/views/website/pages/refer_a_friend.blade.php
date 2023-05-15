@@ -31,12 +31,12 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Contact Us</h2>
+            <h2>Refer a Friend</h2>
         </div>
 
         <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
 
-            <div class="col-lg-5">
+            {{-- <div class="col-lg-5">
                 <div class="info">
                     <div class="address">
                         <i class="bi bi-geo-alt"></i>
@@ -58,14 +58,10 @@
 
                 </div>
 
-            </div>
+            </div> --}}
 
-            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-                {{-- <form action="{{route('findus')}}" method="post">
-                    <input type="text" name="name">
-                    <input type="submit" value="Find">
-                </form> --}}
-                 <form action="{{route('findus')}}" method="post" role="form" class="form-css">
+            <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+                 <form action="{{route('refered')}}" method="post" role="form" class="form-css">
                     @csrf
                     <div class="row">
                         <div class="col-md-6 form-group">
@@ -85,29 +81,34 @@
                     @enderror
                     <div class="form-group mt-3">
                         <input type="text" class="form-control" name="phone"
-                            placeholder="phone" required>
+                            placeholder="Your Phone" required>
                     </div>
                     @error('phone')
                         <span class="text text-danger"> {{$message}}</span>
                     @enderror
-                    <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject"
-                            placeholder="Subject" required>
+                    <div class="row">
+                        <div class="col-md-6 form-group mt-3">
+                            <input type="text" class="form-control" name="referedName"
+                            placeholder="Refered Student Name" required>
+                        </div>
+                        @error('referedName')
+                        <span class="text text-danger"> {{$message}}</span>
+                        @enderror
+                        <div class="col-md-6 form-group mt-3">
+                            <input type="text" class="form-control" name="referedEmail"
+                            placeholder="Refered Student Email" required>
+                        </div>
+                        @error('referedEmail')
+                        <span class="text text-danger"> {{$message}}</span>
+                        @enderror
                     </div>
-                    @error('subject')
+                        <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="referedPhone"
+                            placeholder="Refered Student Phone Number" required>
+                    </div>
+                    @error('referedPhone')
                         <span class="text text-danger"> {{$message}}</span>
                     @enderror
-                    <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    @error('message')
-                        <span class="text text-danger"> {{$message}}</span>
-                    @enderror
-                    {{-- <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div> --}}
                     <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
 
