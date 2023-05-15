@@ -11,11 +11,11 @@ class AboutController extends Controller
     public function index()
     {
         $data = about::all();
-        return view('admin.pages.listaboutus',compact('data'));
+        return view('admin.pages.about.index',compact('data'));
     }
     public function create()
     {
-        return view('admin.pages.about');
+        return view('admin.pages.about.create');
     }
 
     public function store(Request $request)
@@ -43,7 +43,7 @@ class AboutController extends Controller
     public function edit($id)
     {
         $edit = about::find($id);
-        return view('admin.pages.edit',compact('edit'));
+        return view('admin.pages.about.edit',compact('edit'));
     }
     public function delete($id)
     {

@@ -20,6 +20,7 @@ class SliderController extends Controller
     }
     public function store(Request $request)
     {
+
         $validation = $request->validate([
             'name'=>'required',
             'description'=>'required',

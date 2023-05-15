@@ -1,30 +1,16 @@
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Noble Guards</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="{{asset('admin/vendors/feather/feather.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/vendors/ti-icons/css/themify-icons.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/vendors/css/vendor.bundle.base.css')}}">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="{{asset('admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css')}}">
-  <link rel="stylesheet" href="{{asset('admin/vendors/ti-icons/css/themify-icons.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{asset('admin/js/select.dataTables.min.css')}}">
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-
-   <!-- Plugin css for this page -->
-   <link rel="stylesheet" href="{{asset('admin/vendors/select2/select2.min.css')}}">
-   <link rel="stylesheet" href="{{asset('admin/vendors/select2-bootstrap-theme/select2-bootstrap.min.css')}}">
-   <!-- End plugin css for this page -->
-   <!-- inject:css -->
-   <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
-   <!-- endinject -->
-  <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}?v={{time()}}" />
-
-  {{-- ?v={{time()}} =>>>> automaticallyload the css and javascript files --}}
+    <meta charset="utf-8" />
+    <title>Noble Guards limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- third party css -->
+    <link href="{{asset('admin/css/vendor/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+   <!-- App css -->
+   <link href="{{asset('admin/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+   <link href="{{asset('admin/css/app-modern.min.css')}}" rel="stylesheet" type="text/css" id="light-style" />
+   <link href="{{asset('admin/css/app-modern-dark.min.css')}}" rel="stylesheet" type="text/css" id="dark-style" />
 </head>

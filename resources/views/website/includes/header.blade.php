@@ -35,7 +35,7 @@
           </li>
           <li>
             <button style="
-            background-color: #f7a234;
+            background-color: #f59517;
             border-style: none;
             border-radius: 25px;
             padding: 15px;
@@ -44,7 +44,7 @@
             </button>
           </li>
           </ul>
-        
+
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
