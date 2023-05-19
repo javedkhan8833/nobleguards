@@ -13,6 +13,8 @@
     </div>
   </section> --}}
 
+ 
+
 <!-- ======= Cta Section ======= -->
 <section id="cta" class="cta">
     <div class="container">
@@ -26,6 +28,25 @@
 
     </div>
 </section>
+
+
+ <!-- ==== map section======= -->
+  <section id="cta">
+    <div class="container">
+
+        <div class="row">
+
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d105844.66400253278!2d71.35280477335519!3d34.00163185334843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x38d911bd8e696c3d%3A0x1b095effa15f47fa!2sShinwari%20plaza%20%23shop%20%23%203rd%20floor%23%204%2C%20Karkhano%20Market%2C%20Peshawar!3m2!1d34.0016517!2d71.4228449!5e0!3m2!1sen!2s!4v1684353031498!5m2!1sen!2s" 
+                width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ======end map section ======= -->
+
+
  <!-- ======= Contact Section ======= -->
  <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
