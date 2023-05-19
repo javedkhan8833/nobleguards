@@ -9,7 +9,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="{{route('main')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{route('about')}}">About</a></li>
-          <li><a class="nav-link scrollto" href="{{route('services')}}">Services</a></li>
+          {{-- <li><a class="nav-link scrollto" href="{{route('services')}}">Services</a></li> --}}
           {{-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> --}}
           {{-- <li><a class="nav-link scrollto" href="#team">Team</a></li> --}}
           <li><a class="nav-link scrollto" href="{{route('courses')}}">Courses</a></li>
@@ -34,12 +34,7 @@
           <li><a class="nav-link scrollto" href="{{route('contact')}}">Find us</a>
           </li>
           <li>
-            <button style="
-            background-color: #f59517;
-            border-style: none;
-            border-radius: 25px;
-            padding: 15px;
-            ">
+            <button class="btn btn-rounded reg-btn">
             <a href="{{route('firstpage')}}">Register/Login</a>
             </button>
           </li>

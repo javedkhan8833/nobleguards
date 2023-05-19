@@ -82,12 +82,12 @@ class SliderController extends Controller
         $slider = Slider::find($id);
         if($slider->image)
         {
-            if(Storage::exists('public/sliders'.$slider->image))
+            if(Storage::exists('public/sliders/'.$slider->image))
             {
-                $delete = Storage::delete('public/sliders'.$slider->image);
+                $delete = Storage::delete('public/sliders/'.$slider->image);
             }
             $slider->delete();
-            return redirect()->back()->with('success','Slider deleted successfully');
+            return redirect()->route('admin.slider.index')->with('success','Slider deleted successfully');
 
         }
     }

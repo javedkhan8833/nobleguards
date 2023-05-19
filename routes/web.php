@@ -5,6 +5,7 @@ use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\FaqController;
 use App\Http\Controllers\admin\AboutController;
+use App\Http\Controllers\admin\CoursesController;
 use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\website\MainController;
@@ -53,6 +54,13 @@ Route::post('/admin/slider/delete/{id}',[SliderController::class,'delete'])->nam
 Route::get('/admin/contacted',[HomeController::class,'contact'])->name('admin.contactus.contacted');
 Route::get('/admin/contacted/view/{id}',[HomeController::class,'singleContactView'])->name('admin.contactus.view');
 Route::post('/admin/contacted/delete/{id}',[HomeController::class,'delete'])->name('admin.contactus.delete');
+
+// courses routes
+Route::get('/course/list',[CoursesController::class,'index'])->name('admin.course.index');
+Route::get('/course/create',[CoursesController::class,'create'])->name('admin.course.create');
+Route::post('/course/store',[CoursesController::class,'store'])->name('admin.course.store');
+// Route::get('/admin/course/edit/{id}',[CoursesController::class,'edit'])->name('admin.course.edit');
+// Route::get('/admin/course/delete/{id}',[CoursesController::class,'delete'])->name('admin.course.delete');
 //website routes
 Route::get('/home', [MainController::class,'index'])->name('main');
 Route::get('/about', [MainController::class,'about'])->name('about');
@@ -61,10 +69,12 @@ Route::get('/courses', [MainController::class,'selectCourse'])->name('courses');
 Route::get('/initial', [MainController::class,'initial'])->name('firstpage');
 Route::get('/refer/friend', [MainController::class,'referFriend'])->name('refer');
 Route::post('/refered/friends', [ReferController::class,'store'])->name('refered');
+Route::get('/refered/list', [MainController::class,'referedlist'])->name('admin.refered.list');
 Route::get('/services', function(){
     return view('website.pages.services');
 })->name('services');
 
 Route::post('/contactus',[ContactController::class,'store'])->name('findus');
+
 
 

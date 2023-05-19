@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\website;
 
-use App\Http\Controllers\Controller;
+use App\Models\Refer;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class MainController extends Controller
 {
@@ -30,6 +31,12 @@ class MainController extends Controller
     public function referFriend()
     {
         return view('website.pages.refer_a_friend');
+    }
+
+    public function referedlist()
+    {
+        $data = Refer::all();
+        return view('admin.pages.refered.index',compact('data'));
     }
 
 }
