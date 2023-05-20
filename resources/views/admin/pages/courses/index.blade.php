@@ -5,11 +5,11 @@
         <div class="page-title-box">
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">FAQs</a></li>
-                    <li class="breadcrumb-item active">FAQs</li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Couses</a></li>
+                    <li class="breadcrumb-item active">Couses</li>
                 </ol>
             </div>
-            <h4 class="page-title">FAQs</h4>
+            <h4 class="page-title">Couses</h4>
         </div>
     </div>
 </div>
@@ -45,7 +45,7 @@
                               Course Name
                             </th>
                             <th>
-                              Title
+                              Course Title
                             </th>
                             <th>
                                 Sub Title
@@ -57,10 +57,10 @@
                                 Price
                               </th>
                               <th>
-                                Referal Email
+                                Upcoming Dates
                               </th>
 
-                            <th colspan="2">
+                            <th>
                                 Action
                             </th>
                           </tr>
@@ -70,8 +70,25 @@
                         @foreach ($data as  $value)
                             <tr>
                                 <td>{{ $value->id }}</td>
+                                <td>{{ $value->name }}</td>
                                 <td>{{ $value->title }}</td>
-                                <td>{{$value->description }}</td>
+                                <td>{{ $value->sub_title }}</td>
+                                <td>{{$value->duration }}</td>
+                                <td>{{$value->price }}</td>
+
+                                <td>
+                                    <select name="role">
+                                        @foreach ($value->dates as $expectedDate)
+                                         @if ($expectedDate->is_confirmed == 0)
+                                             <option>Date is Not Confirmed Yet</option>
+                                            @else
+                                             <option>{{$expectedDate->upcoming_date }}</option>
+                                        @endif
+                                        @endforeach
+                                    </select>
+
+                                </td>
+
 
                                 <td class="d-flex gap-2 pb-4">
                                     <a href="{{ route('admin.faq.edit', $value->id) }}" class="action-icon"> <i

@@ -86,43 +86,23 @@
                                             <option>Confirm</option>
                                         </select> --}}
                                         <label for="toggleCheckbox">Yes Confirmed</label>
-                                        <input type="checkbox"  id="toggleCheckbox">
-                                        <label for="toggleCheckbox">To be Confirm:</label>
-                                        <input type="checkbox" name="tbc" id="toggleCheckbox">
+                                        <input type="radio" name="is_confirmed" value="1" id="toggleCheckbox" class="toggleCheckbox">
+                                        <label for="toggleCheckbox">To be Confirm</label>
+                                        <input type="radio" name="is_confirmed" value="0" id="toggleCheckbox" class="toggleCheckbox">
                                     </div>
 
                                     </div>
                                     <div id="dates" style="display: none;">
-                                        {{-- <label>Please indicate the number of attendees in your group including yourself.
-                                            <select id="participants" class="input-mini required-entry">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                                <option value="13">13</option>
-                                                <option value="14">14</option>
-                                                <option value="15">15</option>
-                                            </select></label> --}}
-
                                         <table class="table table-hover" id="participantTable">
                                                 <thead>
                                                     <tr>
                                                         <th>&nbsp;</th>
-                                                        <th>Name</th>
-                                                        <th>Year</th>
+                                                        <th>Select Date</th>
                                                     </tr>
                                                 </thead>
                                                 <tr class="participantRow">
                                                     <td>&nbsp;</td>
-                                                    <td><input type="date" name="upcomingDates[]"  class="form-control"></td>
+                                                    <td><input type="date" name="upcoming_date[]"  class="form-control upcomingdates"></td>
                                                     {{-- <td>
                                                         <select name="" id="" class="required-entry">
                                                             <option value=""></option>
@@ -152,10 +132,13 @@
 <script>
     // upcoming dates form appearence
     $(document).ready(function() {
-  $("#toggleCheckbox").change(function() {
-    if ($(this).is(":checked")) {
+  $(".toggleCheckbox").click(function() {
+    console.log($(this).val());
+    if ($(this).val()=="1") {
+
       $("#dates").show();
     } else {
+      $("input.upcomingdates").val('');
       $("#dates").hide();
     }
   });

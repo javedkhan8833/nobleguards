@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('upcomings', function (Blueprint $table) {
             $table->id();
-            $table->string('tbc')->nullable();
-            $table->string('upcomingDates')->nullable();
+            $table->boolean('is_confirmed')->default(0);
+            $table->string('upcoming_date')->nullable();
             $table->foreignId('course_id')->constrained();
             $table->timestamps();
         });

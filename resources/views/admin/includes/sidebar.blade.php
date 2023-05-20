@@ -2,7 +2,7 @@
 
     <div class="leftbar-user">
         <a href="javascript: void(0);">
-            <img src="assets/images/users/avatar-1.jpg" alt="user-image" height="42" class="rounded-circle shadow-sm">
+            <img src="{{asset('admin/images/logo.jpg')}}" alt="user-image" height="42" class="rounded-circle shadow-sm">
             <span class="leftbar-user-name">Admin</span>
         </a>
     </div>
@@ -78,9 +78,9 @@
                     <li>
                         <a href="{{route('admin.contactus.contacted')}}">Inbox</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="apps-email-read.html">Read Email</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </li>
@@ -100,12 +100,12 @@
             </div>
         </li>
 
-        <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
             <a href="apps-social-feed.html" class="side-nav-link">
                 <i class="uil-rss"></i>
                 <span> Social Feed </span>
             </a>
-        </li>
+        </li> --}}
 
          <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
@@ -121,7 +121,7 @@
                 </ul>
             </div>
         </li>
-
+{{--
         <li class="side-nav-item">
             <a href="apps-file-manager.html" class="side-nav-link">
                 <i class="uil-folder-plus"></i>
@@ -521,9 +521,9 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
 
-        <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarMaps" aria-expanded="false" aria-controls="sidebarMaps" class="side-nav-link">
                 <i class="uil-location-point"></i>
                 <span> Maps </span>
@@ -539,9 +539,9 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
 
-        <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarMultiLevel" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
                 <i class="uil-folder-plus"></i>
                 <span> Multi Level </span>
@@ -596,7 +596,7 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
     </ul>
 
 
