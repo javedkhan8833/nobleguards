@@ -2516,7 +2516,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  
+
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -2543,7 +2543,7 @@ html {
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
-  
+
   transform: translateY(-50%) translateZ(60px) scale(.94);
   -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
   -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
@@ -2555,7 +2555,7 @@ html {
 }
 
 .flip-box p {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5em;
 }
 
@@ -2574,4 +2574,16 @@ html {
   margin-top: 25px;
   padding: 15px 20px;
   text-transform: uppercase;
+}
+.reg-btn{
+            background-color: #f6b024;
+            /* border-style: none; */
+            border-radius: 25px;
+            padding: 8px;
+            font-weight: bold;
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+}
+.reg-btn:hover{
+    background-color: #f59517;
 }

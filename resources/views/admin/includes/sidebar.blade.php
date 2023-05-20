@@ -2,7 +2,7 @@
 
     <div class="leftbar-user">
         <a href="javascript: void(0);">
-            <img src="assets/images/users/avatar-1.jpg" alt="user-image" height="42" class="rounded-circle shadow-sm">
+            <img src="{{asset('admin/images/logo.jpg')}}" alt="user-image" height="42" class="rounded-circle shadow-sm">
             <span class="leftbar-user-name">Admin</span>
         </a>
     </div>
@@ -30,7 +30,7 @@
                         <a href="index.html">Ecommerce</a>
                     </li>
                     <li>
-                        <a href="dashboard-projects.html">Projects</a>
+                        <a href="dashboard-projects.html">Refered Students</a>
                     </li>
                 </ul>
             </div>
@@ -63,27 +63,6 @@
                     <li>
                         <a href="{{route('admin.slider.index')}}">Sliders List</a>
                     </li>
-                    {{-- <li>
-                        <a href="apps-ecommerce-products-details.html">Products Details</a>
-                    </li>
-                    <li>
-                        <a href="apps-ecommerce-orders.html">Orders</a>
-                    </li>
-                    <li>
-                        <a href="apps-ecommerce-orders-details.html">Order Details</a>
-                    </li>
-                    <li>
-                        <a href="apps-ecommerce-customers.html">Customers</a>
-                    </li>
-                    <li>
-                        <a href="apps-ecommerce-shopping-cart.html">Shopping Cart</a>
-                    </li>
-                    <li>
-                        <a href="apps-ecommerce-checkout.html">Checkout</a>
-                    </li>
-                    <li>
-                        <a href="apps-ecommerce-sellers.html">Sellers</a>
-                    </li> --}}
                 </ul>
             </div>
         </li>
@@ -99,9 +78,9 @@
                     <li>
                         <a href="{{route('admin.contactus.contacted')}}">Inbox</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="apps-email-read.html">Read Email</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </li>
@@ -109,55 +88,40 @@
         <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
                 <i class="uil-briefcase"></i>
-                <span> Projects </span>
+                <span> Refered Students </span>
                 <span class="menu-arrow"></span>
             </a>
             <div class="collapse" id="sidebarProjects">
                 <ul class="side-nav-second-level">
                     <li>
-                        <a href="apps-projects-list.html">List</a>
-                    </li>
-                    <li>
-                        <a href="apps-projects-details.html">Details</a>
-                    </li>
-                    <li>
-                        <a href="apps-projects-gantt.html">Gantt <span class="badge rounded-pill badge-dark-lighten text-dark font-10 float-end">New</span></a>
-                    </li>
-                    <li>
-                        <a href="apps-projects-add.html">Create Project <span class="badge rounded-pill badge-success-lighten font-10 float-end">New</span></a>
+                        <a href="{{route('admin.refered.list')}}">List</a>
                     </li>
                 </ul>
             </div>
         </li>
 
-        <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
             <a href="apps-social-feed.html" class="side-nav-link">
                 <i class="uil-rss"></i>
                 <span> Social Feed </span>
             </a>
-        </li>
+        </li> --}}
 
-        <li class="side-nav-item">
+         <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarTasks" aria-expanded="false" aria-controls="sidebarTasks" class="side-nav-link">
                 <i class="uil-clipboard-alt"></i>
-                <span> Tasks </span>
+                <span> Courses </span>
                 <span class="menu-arrow"></span>
             </a>
             <div class="collapse" id="sidebarTasks">
                 <ul class="side-nav-second-level">
                     <li>
-                        <a href="apps-tasks.html">List</a>
-                    </li>
-                    <li>
-                        <a href="apps-tasks-details.html">Details</a>
-                    </li>
-                    <li>
-                        <a href="apps-kanban.html">Kanban Board</a>
+                        <a href="{{route('admin.course.index')}}">List</a>
                     </li>
                 </ul>
             </div>
         </li>
-
+{{--
         <li class="side-nav-item">
             <a href="apps-file-manager.html" class="side-nav-link">
                 <i class="uil-folder-plus"></i>
@@ -557,9 +521,9 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
 
-        <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarMaps" aria-expanded="false" aria-controls="sidebarMaps" class="side-nav-link">
                 <i class="uil-location-point"></i>
                 <span> Maps </span>
@@ -575,9 +539,9 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
 
-        <li class="side-nav-item">
+        {{-- <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarMultiLevel" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
                 <i class="uil-folder-plus"></i>
                 <span> Multi Level </span>
@@ -632,21 +596,9 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
     </ul>
 
-    <!-- Help Box -->
-    <div class="help-box help-box-light text-center">
-        <a href="javascript: void(0);" class="float-end close-btn text-body">
-            <i class="mdi mdi-close"></i>
-        </a>
-        <img src="assets/images/help-icon.svg" height="90" alt="Helper Icon Image" />
-        <h5 class="mt-3">Unlimited Access</h5>
-        <p class="mb-3">Upgrade to plan to get access to unlimited reports</p>
-        <a href="javascript: void(0);" class="btn btn-outline-primary btn-sm">Upgrade</a>
-    </div>
-    <!-- end Help Box -->
-    <!-- End Sidebar -->
 
     <div class="clearfix"></div>
     <!-- Sidebar -left -->

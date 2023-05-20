@@ -24,7 +24,7 @@
                 </div>
             </li>
 
-            <li class="dropdown notification-list topbar-dropdown d-none d-lg-block">
+            {{-- <li class="dropdown notification-list topbar-dropdown d-none d-lg-block">
                 <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" id="topbar-languagedrop" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <img src="assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span> <i class="mdi mdi-chevron-down"></i>
                 </a>
@@ -51,7 +51,7 @@
                     </a>
 
                 </div>
-            </li>
+            </li> --}}
 
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" id="topbar-notifydrop" role="button" aria-haspopup="true" aria-expanded="false">
@@ -142,7 +142,7 @@
                 </div>
             </li>
 
-            <li class="dropdown notification-list d-none d-sm-inline-block">
+            {{-- <li class="dropdown notification-list d-none d-sm-inline-block">
                 <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <i class="dripicons-view-apps noti-icon"></i>
                 </a>
@@ -194,23 +194,23 @@
                     </div>
 
                 </div>
-            </li>
+            </li> --}}
 
-            <li class="notification-list">
+            {{-- <li class="notification-list">
                 <a class="nav-link end-bar-toggle" href="javascript: void(0);">
                     <i class="dripicons-gear noti-icon"></i>
                 </a>
-            </li>
+            </li> --}}
 
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" id="topbar-userdrop" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">
                     <span class="account-user-avatar">
-                        <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                        <img src="{{asset('admin/images/logo.jpg')}}" alt="user-image" class="rounded-circle">
                     </span>
                     <span>
-                        <span class="account-user-name">Dominic Keller</span>
-                        <span class="account-position">Founder</span>
+                        <span class="account-position">Noble Guards</span>
+                        <span class="account-user-name">{{auth()->user()->name}}</span>
                     </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown" aria-labelledby="topbar-userdrop">
@@ -244,9 +244,12 @@
                     </a>
 
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                     <a href="javascript:void(0);" class="dropdown-item notify-item d-flex align-items-center">
                         <i class="mdi mdi-logout me-1"></i>
-                        <span>Logout</span>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="btn p-0" type="submit">Logout</button>
+                        </form>
                     </a>
 
                 </div>
@@ -261,13 +264,13 @@
             </div>
         </a>
         <div class="app-search dropdown">
-            <form>
+            {{-- <form>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search..." id="top-search">
                     <span class="mdi mdi-magnify search-icon"></span>
                     <button class="input-group-text btn-primary" type="submit">Search</button>
                 </div>
-            </form>
+            </form> --}}
             <div class="dropdown-menu dropdown-menu-animated dropdown-lg" id="search-dropdown">
                 <!-- item-->
                 <div class="dropdown-header noti-title">

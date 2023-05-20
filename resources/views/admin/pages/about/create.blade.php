@@ -34,43 +34,46 @@
                                             <input type="text" name="title" class="form-control" id="floatingInput"
                                                 placeholder="Input Your Title Here" />
                                             <label for="floatingInput">Title</label>
-                                        </div>
-                                        @error('title')
+
+                                            @error('title')
                                             <span class="text text-danger"> {{ $message }}</span>
-                                        @enderror
-                                        <div class="form-floating">
+                                            @enderror
+                                        </div>
+                                        <div class="form-floating mb-3">
                                             <textarea class="form-control" name="description" placeholder="Writer your Description here" id="floatingTextarea"
                                                 style="height: 100px;"></textarea>
                                             <label for="floatingTextarea">Description</label>
-                                        </div>
-                                        @error('description')
-                                            <span class="text text-danger"> {{ $message }}</span>
-                                        @enderror
 
-                                        <div class="form-floating">
+                                            @error('description')
+                                            <span class="text text-danger"> {{ $message }}</span>
+                                            @enderror
+                                        </div>
+                                        <div class="form-floating mb-3">
                                             <textarea class="form-control" name="aim" placeholder="Writer your Aim here" id="floatingTextarea"
                                                 style="height: 100px;"></textarea>
                                             <label for="floatingTextarea">Aim</label>
-                                        </div>
-                                        @error('aim')
+                                            @error('aim')
                                             <span class="text text-danger"> {{ $message }}</span>
-                                        @enderror
-                                        <div class="form-floating">
+                                            @enderror
+                                        </div>
+                                        <div class="form-floating mb-3">
                                             <textarea class="form-control" name="values" placeholder="Writer Our Values here" id="floatingTextarea"
                                                 style="height: 100px;"></textarea>
                                             <label for="floatingTextarea">Our Values</label>
-                                        </div>
-                                        @error('values')
+
+                                            @error('values')
                                             <span class="text text-danger"> {{ $message }}</span>
-                                        @enderror
-                                        <div class="form-floating">
+                                            @enderror
+                                        </div>
+                                        <div class="form-floating mb-3">
                                             <textarea class="form-control" name="why" placeholder="Writer Our Values here" id="floatingTextarea"
                                                 style="height: 100px;"></textarea>
                                             <label for="floatingTextarea">Why Noble Guards?</label>
-                                        </div>
-                                        @error('why')
+
+                                            @error('why')
                                             <span class="text text-danger"> {{ $message }}</span>
-                                        @enderror
+                                            @enderror
+                                        </div>
                                         <br>
                                         <button type="submit" class="btn btn-primary mr-2">Save</button>
                                         <a href="{{route('admin.about.index')}}" class="btn btn-light">Cancel</a>
