@@ -222,7 +222,7 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    {{-- <section id="services" class="services">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -284,7 +284,7 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
     <!-- End Services Section -->
 
 

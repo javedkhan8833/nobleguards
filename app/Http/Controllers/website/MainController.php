@@ -6,20 +6,24 @@ use App\Models\Refer;
 use App\Models\about;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Faq;
 
 class MainController extends Controller
 {
     public function index()
     {
         $about = about::first();
-        if($about->count() == 0)
-        {
-            return view('website.pages.home');
-        }
-        else
-        {
-            return view('website.pages.home',compact('about'));
-        }
+        $faqs  = Faq::all();
+        dd($faqs);
+        // if($about->count() == 0)
+        // {
+        //     return view('website.pages.home');
+        // }
+        // else
+        // {
+        //     return view('website.pages.home',compact('about'));
+        // }
+        return view('website.pages.home',compact('about','faqs'));
     }
     public function about()
     {
@@ -54,6 +58,11 @@ class MainController extends Controller
     {
         $data = Refer::all();
         return view('admin.pages.refered.index',compact('data'));
+    }
+    public function faqs()
+    {
+
+        return view('admin.website.pages.home');
     }
 
 }
