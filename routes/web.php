@@ -4,13 +4,15 @@ use PhpParser\Node\Stmt\Return_;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\FaqController;
-use App\Http\Controllers\admin\AboutController;
-use App\Http\Controllers\admin\CoursesController;
 use App\Http\Controllers\admin\HomeController;
+use App\Http\Controllers\admin\AboutController;
 use App\Http\Controllers\admin\SliderController;
 use App\Http\Controllers\website\MainController;
-use App\Http\Controllers\website\ContactController;
+use App\Http\Controllers\admin\CoursesController;
 use App\Http\Controllers\website\ReferController;
+use App\Http\Controllers\website\AboutusController;
+use App\Http\Controllers\website\ContactController;
+use App\Http\Controllers\website\SubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,11 +78,14 @@ Route::get('/initial', [MainController::class,'initial'])->name('firstpage');
 Route::get('/refer/friend', [MainController::class,'referFriend'])->name('refer');
 Route::post('/refered/friends', [ReferController::class,'store'])->name('refered');
 Route::get('/refered/list', [MainController::class,'referedlist'])->name('admin.refered.list');
+Route::post('/contactus',[ContactController::class,'store'])->name('findus');
+Route::get('/aboutus/index',[AboutController::class,'index'])->name('aboutus.index');
+Route::get('/aboutus/detail',[AboutusController::class,'detail'])->name('aboutus.detail');
+Route::post('/subscribe', [SubscriptionController::class,'store'])->name('subscribe');
 // Route::get('/services', function(){
 //     return view('website.pages.services');
 // })->name('services');
 
-Route::post('/contactus',[ContactController::class,'store'])->name('findus');
 
 
 

@@ -1,7 +1,7 @@
 <div class="leftside-menu leftside-menu-detached">
 
     <div class="leftbar-user">
-        <a href="javascript: void(0);">
+        <a href="{{route('dashboard')}}">
             <img src="{{asset('admin/images/logo.jpg')}}" alt="user-image" height="42" class="rounded-circle shadow-sm">
             <span class="leftbar-user-name">Admin</span>
         </a>

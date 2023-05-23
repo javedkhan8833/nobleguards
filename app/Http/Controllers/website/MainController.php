@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\website;
 
 use App\Models\Refer;
+use App\Models\about;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -10,11 +11,27 @@ class MainController extends Controller
 {
     public function index()
     {
-        return view('website.pages.home');
+        $about = about::first();
+        if($about->count() == 0)
+        {
+            return view('website.pages.home');
+        }
+        else
+        {
+            return view('website.pages.home',compact('about'));
+        }
     }
     public function about()
     {
-        return view('website.pages.about');
+        $aboutus = about::first();
+        if($aboutus->count() == 0)
+        {
+            return view('website.pages.about',compact('aboutus'));
+        }
+        else
+        {
+            return view('website.pages.about',compact('aboutus'));
+        }
     }
     public function contact()
     {

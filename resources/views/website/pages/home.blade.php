@@ -129,25 +129,25 @@
 
             <div class="section-title">
                 <h2>About Us</h2>
-                <p>Professional SECURITY TRAINING PROVIDER IN THE UK</p>
+                @isset($about)
+                <p>{{$about->title}}</p>
+                  @endisset
             </div>
 
             <div class="row content">
                 <div class="col-lg-12">
-                    <p>
-                        Noble Guards Ltd is an SIA professional training organization preparing personnel for
-                        careers in the security industry. In collaboration with the UK's leading awarding
-                        organisations, Noble Guards Ltd provides high quality training for anyone wishing to get an
-                        SIA qualification. Our tutors are professionals from the security industry that equip you
-                        with the knowledge and skills needed for you to succeed.
-                    </p>
+                    @isset($about)
+                    <p>{{$about->description}}</p>
+                    @endisset
                     {{-- <ul>
       <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
       <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
       <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
     </ul> --}}
                     <div class="section-title">
-                        <a href="#" class="btn-learn-more">Learn More</a>
+                        @isset($about)
+                        <a href="{{route('aboutus.detail')}}" class="btn-learn-more">Learn More</a>
+                        @endisset
                     </div>
                 </div>
                 {{-- <div class="col-lg-6 pt-4 pt-lg-0">

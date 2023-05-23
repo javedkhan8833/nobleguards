@@ -8,9 +8,14 @@
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
+            <form action="{{route('subscribe')}}" method="post" id="subscription-form">
+                @csrf
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
+            <div id="success-message" style="display: block; font-size:20px;"></div>
+            <div class="print-error-msg" style="display:none">
+                <span style="color:red; font-size:20px; width:30px"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -84,3 +89,46 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    $(document).ready(function() {
+        $('#subscription-form').submit(function(event) {
+            event.preventDefault();
+
+            var form = $(this);
+            var url = form.attr('action');
+            var data = form.serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: data,
+                success: function(response) {
+                    // Handle the successful subscription response
+                    if($.isEmptyObject(response.error)){
+                        $('#success-message').text(response.message);
+                        $('#success-message').show();
+                }else{
+                    printErrorMsg(response.error);
+                }
+                    // $('#success-message').text(response.message);
+                    // $('#success-message').show();
+                },
+                error: function(xhr, status, error) {
+                    // Handle the error response
+                    console.error(error);
+                }
+            });
+
+        });
+        function printErrorMsg (msg) {
+        $(".print-error-msg").find("span").html('');
+        $(".print-error-msg").css('display','block');
+        $.each( msg, function( key, value ) {
+            $(".print-error-msg").find("span").append('<span>'+value+'</span>');
+        });
+    }
+    });
+
+
+</script>
