@@ -24,7 +24,7 @@
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
+      <div class="section-title ">
         <h2>About Us</h2>
         @isset($aboutus)
         <p>{{$aboutus->title}}</p>
@@ -42,8 +42,8 @@
             <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
           </ul> --}}
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row m-5">
+            <div class="col-md-4">
                 <div class="section-title">
                     <h2>OUR AIM</h2>
                     @isset($aboutus)
@@ -51,17 +51,17 @@
                     @endisset
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="section-title">
+            <div class="col-md-4">
+                <div class="section-title bg-#f7d200">
                     <h2>OUR VALUES</h2>
                     @isset($aboutus)
                     <p>{{$aboutus->values}}</p>
                     @endisset
                   </div>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-4">
                 <div class="section-title">
-                    <h2>OUR VALUES</h2>
+                    <h2>Why Nobel Gaurd</h2>
                     @isset($aboutus)
                     <p>{{$aboutus->why}}</p>
                     @endisset
