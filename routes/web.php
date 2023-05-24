@@ -82,9 +82,8 @@ Route::post('/contactus',[ContactController::class,'store'])->name('findus');
 Route::get('/aboutus/index',[AboutController::class,'index'])->name('aboutus.index');
 Route::get('/aboutus/detail',[AboutusController::class,'detail'])->name('aboutus.detail');
 Route::post('/subscribe', [SubscriptionController::class,'store'])->name('subscribe');
-// Route::get('/services', function(){
-//     return view('website.pages.services');
-// })->name('services');
+Route::get('/terms', [MainController::class,'terms'])->name('terms');
+
 
 
 
