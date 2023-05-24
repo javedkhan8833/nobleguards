@@ -2,8 +2,8 @@
 
     <div class="leftbar-user">
         <a href="{{route('dashboard')}}">
-            <img src="{{asset('admin/images/logo.jpg')}}" alt="user-image" height="42" class="rounded-circle shadow-sm">
-            <span class="leftbar-user-name">Admin</span>
+            <img src="{{asset('admin/images/logo.jpg')}}" alt="user-image" height="80" class="rounded-circle shadow-sm">
+            <span class="leftbar-user-name m-0 pt-2 text-centr">Admin</span>
         </a>
     </div>
 

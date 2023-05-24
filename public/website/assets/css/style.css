@@ -1477,13 +1477,19 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
+  border: 2px solid #1c66a7;
   padding: 0 100px;
+  border-radius: 30px;
+}
+#faq {
+  background-color: #ffffff;
 }
 
 .faq .faq-list ul {
   padding: 0;
   list-style: none;
 }
+
 
 .faq .faq-list li+li {
   margin-top: 15px;

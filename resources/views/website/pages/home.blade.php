@@ -58,16 +58,18 @@
         <div class="container">
 
             <div class="row" data-aos="zoom-in">
-                <div class="col-lg-9 text-center text-lg-start">
-                    <h3>New SIA Course Updates (April 2021)</h3>
-                    <p> As of April 1, Door Supervision course is a 6 day course instead of a 4 day course. Moreover,
-                        you must have a First Aid Qualification before you can take the training. This should be an
-                        Emergency First Aid at Work (EFAW) certificate or higher.</p>
-                </div>
-                <div class="col-lg-3 cta-btn-container text-center">
-                    <p>Enrol on a course today</p>
-                    <a class="cta-btn align-middle" href="#">Courses</a>
-                </div>
+                 <div class="row col-lg-12 text-lg-start mt-lg-5" data-aos="zoom-in">
+
+                <h3 Class="text-center">OFFERING 25% DISCOUNT ON TOP - UP</h3>
+                <p Class="text-center"> Noble Guards Ltd offers courses with interactive features. Our trainers ensure that candidates are given up to date knowledge on what is currently going in the industry. You can either choose from some of our more popular courses or register your interest for the various other courses that Noble Guards Ltd offers.</p>
+        </div>
+        <div class="row" data-aos="zoom-in">
+          <button type="button" class=" btn btn-lg  ">
+                <!-- <p>Enrol on a course today</p> -->
+                <a class="cta-btn align-middle px-sm-5 " href="#">Enrol on a Course today</a>
+                {{-- <a class="cta-btn align-middle px-sm-5 " href="#">Register in a Course today</a> --}}
+          </button>
+        </div>
             </div>
 
         </div>

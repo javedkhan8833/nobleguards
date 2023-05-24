@@ -14,7 +14,7 @@ class MainController extends Controller
     {
         $about = about::first();
         $faqs  = Faq::all();
-        dd($faqs);
+        // dd($faqs);
         // if($about->count() == 0)
         // {
         //     return view('website.pages.home');
