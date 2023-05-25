@@ -24,26 +24,16 @@ class SliderController extends Controller
         $validation = $request->validate([
             'name'=>'required',
             'description'=>'required',
-            'image'=>'required'
+            // 'image'=>'required'
         ]);
 
         $data = [
             'name'=>$request->name,
             'description'=>$request->description,
-            'created_at'=>date('Y-m-d H:i:s'),
-            'updated_at'=>date('Y-m-d H:i:s')
+            // 'created_at'=>date('Y-m-d H:i:s'),
+            // 'updated_at'=>date('Y-m-d H:i:s')
         ];
-            if($request->hasFile('image'))
-            {
-            $imageName = time().'.'.$request->image->extension();
-            $request->image->storeAs('public/sliders', $imageName);
-            $data['image'] = $imageName;
-        }
-        else{
-            $data['image']=''  ;
-        }
-
-            $query = Slider::insert($data);  //insert function return true or fals (bolean)
+         $query = Slider::insert($data);  //insert function return true or fals (bolean)
 
         if($query)
         {
