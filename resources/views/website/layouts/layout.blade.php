@@ -11,7 +11,7 @@
     <div id="topbar" class="fixed-top d-flex align-items-center ">
         <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">Info@nobleguardsltd.co.uk</a>
+                <i class="bi bi-envelope-fill"></i><a href="mailto:info@nobleguards.co.uk">info@nobleguards.co.uk</a>
                 <i class="bi bi-phone-fill phone-icon"></i> +44 7366 565595
             </div>
         </div>

@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\website;
 
-use App\Models\Refer;
+use App\Models\Faq;
 use App\Models\about;
+use App\Models\Refer;
+use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Faq;
 
 class MainController extends Controller
 {
@@ -14,7 +15,7 @@ class MainController extends Controller
     {
         $about = about::first();
         $faqs  = Faq::all();
-        // dd($faqs);
+
         // if($about->count() == 0)
         // {
         //     return view('website.pages.home');
@@ -43,6 +44,8 @@ class MainController extends Controller
     }
     public function selectCourse()
     {
+        $data = Course::with(["dates"])->get();
+        return view('website.pages.courses',compact('data'));
         return view('website.pages.courses');
     }
     public function initial()
@@ -63,6 +66,10 @@ class MainController extends Controller
     {
 
         return view('admin.website.pages.home');
+    }
+    public function terms()
+    {
+        return view('website.pages.terms');
     }
 
 }

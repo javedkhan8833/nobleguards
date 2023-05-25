@@ -8,9 +8,7 @@
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-             
-              <div class="carousel-container">
-                <!-- <div class="has-bg-img"> -->
+                <div class="carousel-container slide1">
                     <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Noble Guards</span></h2>
                     <p class="animate__animated animate__fadeInUp">Noble Guards Ltd is an SIA training organization
                         preparing personnel for career in the security industry.</p>
@@ -511,15 +509,14 @@
 
             <div class="faq-list">
                 <ul>
+                    @foreach ($faqs as $faq)
                     <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                            data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
-                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        data-bs-target="#faq-list-1">{{$faq->title}}? <i
+                        class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                         <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                             <p>
-                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                purus non.
+                                {{$faq->description}}
                             </p>
                         </div>
                     </li>

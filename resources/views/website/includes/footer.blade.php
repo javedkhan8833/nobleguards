@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Stay Connected, Subscribe to Us!</p>
           </div>
           <div class="col-lg-6">
             <form action="{{route('subscribe')}}" method="post" id="subscription-form">
@@ -28,12 +28,12 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Find us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('main')}}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('about')}}">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('courses')}}">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}">Find us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('terms')}}">Terms and Conditions</a></li>
+              {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> --}}
             </ul>
           </div>
 
@@ -41,17 +41,17 @@
             <h4>Contact Us</h4>
             <p>
               A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Luton, NY 535022<br>
+              United kingdom <br><br>
+              <strong>Phone:</strong> +44 7366 565595<br>
+              <strong>Email:</strong> info@nobleguards.co.uk<br>
             </p>
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Anyar</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <h3>About Noble Guards Ltd</h3>
+            <p>Noble Guards Ltd is an SIA professional training organization preparing personnel for careers in the security industry. In collaboration with the UK's leading awarding organisations, Noble Guards Ltd provides high quality training for anyone wishing to get an SIA qualification. Our tutors are professionals from the security industry that equip you with the knowledge and skills needed for you to succeed.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
