@@ -8,7 +8,7 @@
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="javascript: void(0);">Sliders</a></li>
                     <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                    <li class="breadcrumb-item active">Frequently Asks Questions? </li>
+                    <li class="breadcrumb-item active">website sliders </li>
                 </ol>
             </div>
             <h4 class="page-title">Slider Form</h4>
@@ -41,10 +41,10 @@
                                         <span class="text text-danger"> {{$message}}</span>
                                         @enderror
                                     </div>
-                                    <div class="mb-3">
+                                    {{-- <div class="mb-3">
                                         <label for="example-fileinput" class="form-label">Upload Image</label>
                                         <input type="file" name="image" example-fileinput" class="form-control">
-                                    </div>
+                                    </div> --}}
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                     <a href="{{route('admin.slider.index')}}" class="btn btn-light">Cancel</a>
                                 </form>

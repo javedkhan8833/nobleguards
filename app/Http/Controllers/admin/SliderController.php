@@ -24,26 +24,16 @@ class SliderController extends Controller
         $validation = $request->validate([
             'name'=>'required',
             'description'=>'required',
-            'image'=>'required'
+            // 'image'=>'required'
         ]);
 
         $data = [
             'name'=>$request->name,
             'description'=>$request->description,
-            'created_at'=>date('Y-m-d H:i:s'),
-            'updated_at'=>date('Y-m-d H:i:s')
+            // 'created_at'=>date('Y-m-d H:i:s'),
+            // 'updated_at'=>date('Y-m-d H:i:s')
         ];
-            if($request->hasFile('image'))
-            {
-            $imageName = time().'.'.$request->image->extension();
-            $request->image->storeAs('public/sliders', $imageName);
-            $data['image'] = $imageName;
-        }
-        else{
-            $data['image']=''  ;
-        }
-
-            $query = Slider::insert($data);  //insert function return true or fals (bolean)
+         $query = Slider::insert($data);  //insert function return true or fals (bolean)
 
         if($query)
         {
@@ -62,11 +52,9 @@ class SliderController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'title'=>'required',
+            'name'=>'required',
             'description'=>'required',
         ]);
-        if($data)
-        {
            $query = Slider::where('id',$id)->update($data);
            if($query)
            {
@@ -75,20 +63,12 @@ class SliderController extends Controller
         else{
                return redirect()->route('admin.slider.index')->with('error','something went wrong');
            }
-        }
+
     }
     public function delete($id)
     {
         $slider = Slider::find($id);
-        if($slider->image)
-        {
-            if(Storage::exists('public/sliders/'.$slider->image))
-            {
-                $delete = Storage::delete('public/sliders/'.$slider->image);
-            }
             $slider->delete();
             return redirect()->route('admin.slider.index')->with('success','Slider deleted successfully');
-
-        }
     }
 }

@@ -47,10 +47,6 @@
                             <th>
                               Description
                             </th>
-                            <th>
-                                Image
-                            </th>
-
                             <th colspan="2">
                                 Action
                             </th>
@@ -63,7 +59,7 @@
                                 <td>{{ $value->id }}</td>
                                 <td>{{ $value->name }}</td>
                                 <td>{{$value->description }}</td>
-                                <td><img src="{{asset('storage/sliders'.$value->image)}}" width="50px" height="50px"alt="" /></td>
+                                {{-- <td><img src="{{asset('storage/sliders'.$value->image)}}" width="50px" height="50px"alt="" /></td> --}}
 
                                 <td class="d-flex gap-2 pb-4">
                                     <a href="{{ route('admin.slider.edit', $value->id) }}" class="action-icon"> <i
