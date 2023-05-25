@@ -670,6 +670,8 @@ section {
   background: url("../img/about-bg.png") top center no-repeat;
   position: relative;
 }
+.maintxt {position: relative;}
+.maintxt > img, .overlay-text {position: absolute;}
 
 .about:before {
   content: "";
@@ -1477,9 +1479,9 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-  border: 2px solid #1c66a7;
+  /* border: 2px solid #1c66a7; */
   padding: 0 100px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 #faq {
   background-color: #ffffff;

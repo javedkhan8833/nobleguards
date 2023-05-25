@@ -8,14 +8,19 @@
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="carousel-container">
+             
+              <div class="carousel-container">
+                <!-- <div class="has-bg-img"> -->
                     <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Noble Guards</span></h2>
                     <p class="animate__animated animate__fadeInUp">Noble Guards Ltd is an SIA training organization
                         preparing personnel for career in the security industry.</p>
                     <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Sign up
                         Now</a>
-                </div>
+                        <!-- <img class="bg-img" src="{{asset('website\assets\img\about-bg.png')}}" alt="..."> -->
+                <!-- </div> -->
+              </div>
             </div>
+
 
             <!-- Slide 2 -->
             <div class="carousel-item">
@@ -171,7 +176,7 @@
 
 <div class="clients-slider swiper">
   <div class="swiper-wrapper align-items-center">
-    <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt="/lnvndfvnfdvnlsdvfnlsnvl\/sdknv/ lorem25"></div>
     <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
     <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-3.png')}}" class="img-fluid" alt=""></div>
     <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-4.png')}}" class="img-fluid" alt=""></div>
@@ -524,7 +529,8 @@
                             data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim
                             nunc? <i class="bx bx-chevron-down icon-show"></i><i
                                 class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                        <div id="faq-list-2" class="collapse" data-bs-pa
+                        rent=".faq-list">
                             <p>
                                 Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
                                 velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
