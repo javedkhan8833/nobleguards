@@ -30,7 +30,7 @@
                             </div>
 
                             <div class="mb-3">
-                                <a href="pages-recoverpw.html" class="text-muted float-end"><small>Forgot your password?</small></a>
+                                {{-- <a href="pages-recoverpw.html" class="text-muted float-end"><small>Forgot your password?</small></a> --}}
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input-group input-group-merge">
                                     <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
@@ -56,11 +56,11 @@
                 </div>
                 <!-- end card -->
 
-                <div class="row mt-3">
+                {{-- <div class="row mt-3">
                     <div class="col-12 text-center">
                         <p class="text-muted">Don't have an account? <a href="pages-register.html" class="text-muted ms-1"><b>Sign Up</b></a></p>
                     </div> <!-- end col -->
-                </div>
+                </div> --}}
                 <!-- end row -->
 
             </div> <!-- end col -->

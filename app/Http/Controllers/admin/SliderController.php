@@ -52,11 +52,9 @@ class SliderController extends Controller
     public function update(Request $request, $id)
     {
         $data = $request->validate([
-            'title'=>'required',
+            'name'=>'required',
             'description'=>'required',
         ]);
-        if($data)
-        {
            $query = Slider::where('id',$id)->update($data);
            if($query)
            {
@@ -65,20 +63,12 @@ class SliderController extends Controller
         else{
                return redirect()->route('admin.slider.index')->with('error','something went wrong');
            }
-        }
+
     }
     public function delete($id)
     {
         $slider = Slider::find($id);
-        if($slider->image)
-        {
-            if(Storage::exists('public/sliders/'.$slider->image))
-            {
-                $delete = Storage::delete('public/sliders/'.$slider->image);
-            }
             $slider->delete();
             return redirect()->route('admin.slider.index')->with('success','Slider deleted successfully');
-
-        }
     }
 }

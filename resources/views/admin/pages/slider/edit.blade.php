@@ -6,12 +6,12 @@
         <div class="page-title-box">
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">FAQs</a></li>
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                    <li class="breadcrumb-item active">Frequently Asks Questions? </li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Sliders</a></li>
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Slider</a></li>
+                    <li class="breadcrumb-item active">webiste sliders </li>
                 </ol>
             </div>
-            <h4 class="page-title">FAQs Form</h4>
+            <h4 class="page-title">Slider Edit Form</h4>
         </div>
     </div>
 </div>

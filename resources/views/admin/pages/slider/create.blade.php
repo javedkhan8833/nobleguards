@@ -8,7 +8,7 @@
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item"><a href="javascript: void(0);">Sliders</a></li>
                     <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                    <li class="breadcrumb-item active">Frequently Asks Questions? </li>
+                    <li class="breadcrumb-item active">website sliders </li>
                 </ol>
             </div>
             <h4 class="page-title">Slider Form</h4>

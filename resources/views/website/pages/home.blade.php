@@ -7,18 +7,18 @@
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
             <!-- Slide 1 -->
+            @foreach ($sliders as $slider)
             <div class="carousel-item active">
-                <div class="carousel-container slide1">
-                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Noble Guards</span></h2>
-                    <p class="animate__animated animate__fadeInUp">Noble Guards Ltd is an SIA training organization
-                        preparing personnel for career in the security industry.</p>
-                    <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Sign up
-                        Now</a>
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">{{$slider->name}}</h2>
+                    <p class="animate__animated animate__fadeInUp">{{$slider->description}}</p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
                 </div>
             </div>
+            @endforeach
 
             <!-- Slide 2 -->
-            <div class="carousel-item">
+            {{-- <div class="carousel-item">
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
                     <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
@@ -27,10 +27,10 @@
                         modi architecto.</p>
                     <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Slide 3 -->
-            <div class="carousel-item">
+            {{-- <div class="carousel-item">
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
                     <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
@@ -39,7 +39,7 @@
                         modi architecto.</p>
                     <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
                 </div>
-            </div>
+            </div> --}}
 
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
