@@ -480,7 +480,7 @@ h6 {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/first-aid.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -490,6 +490,7 @@ h6 {
 
 #hero:before {
   content: "";
+  background: url("../img/first-aid.jpg");
   background: rgba(6, 101, 183, 0.9);
   position: absolute;
   bottom: 0;
@@ -2592,4 +2593,11 @@ html {
 }
 .reg-btn:hover{
     background-color: #f59517;
+}
+
+.slide1{
+  background-image: url('website/assets/img/first-aid.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }

@@ -8,7 +8,7 @@
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <div class="carousel-container">
+                <div class="carousel-container slide1">
                     <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Noble Guards</span></h2>
                     <p class="animate__animated animate__fadeInUp">Noble Guards Ltd is an SIA training organization
                         preparing personnel for career in the security industry.</p>
