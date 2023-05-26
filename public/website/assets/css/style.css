@@ -671,9 +671,6 @@ section {
   background: url("../img/about-bg.png") top center no-repeat;
   position: relative;
 }
-.maintxt {position: relative;}
-.maintxt > img, .overlay-text {position: absolute;}
-
 .about:before {
   content: "";
   background: rgba(255, 255, 255, 0.75);
