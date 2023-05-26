@@ -1,4 +1,4 @@
-@extends('website.layouts.layout')
+;@extends('website.layouts.layout')
 
 @section('content')
 
@@ -7,8 +7,8 @@
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
             <!-- Slide 1 -->
-            @foreach ($sliders as $slider)
-            <div class="carousel-item active">
+            @foreach ($sliders as $key=>$slider)
+            <div class="carousel-item {{ $key==0 ? 'active' : ''  }}">
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">{{$slider->name}}</h2>
                     <p class="animate__animated animate__fadeInUp">{{$slider->description}}</p>
