@@ -116,7 +116,10 @@
             <div class="collapse" id="sidebarTasks">
                 <ul class="side-nav-second-level">
                     <li>
-                        <a href="{{route('admin.course.index')}}">List</a>
+                        <a href="{{route('admin.course.index')}}">List Courses</a>
+                    </li>
+                    <li>
+                        <a href="{{route('registered.courses.list')}}">Registered Courses</a>
                     </li>
                 </ul>
             </div>

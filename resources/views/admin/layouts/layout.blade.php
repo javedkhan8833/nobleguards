@@ -2,11 +2,10 @@
 <html lang="en">
 @include('admin.includes.head')
 
-<body class="loading" data-layout="detached"
-    data-layout-config='{"leftSidebarCondensed":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+<body class="loading" data-layout="detached" data-layout-config='{"leftSidebarCondensed":false,"darkMode":false, "showRightSidebarOnStart": true}'>
 
     @php
-        
+
         $success = session('success');
         $warning = session('warning');
         $danger = session('danger');
@@ -25,7 +24,7 @@
                 toastr.error("' . $danger . '");
             </script>';
         }
-        
+
         $errors = '';
         if (session()->has('errors')) {
             foreach (session('errors')->all() as $error) {

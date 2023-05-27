@@ -88,6 +88,8 @@ Route::post('/subscribe', [SubscriptionController::class,'store'])->name('subscr
 Route::get('/terms', [MainController::class,'terms'])->name('terms');
 Route::get('/slider', [MainController::class,'slider'])->name('slider');
 Route::get('/register/form', [MainController::class,'reg_form'])->name('register.index');
+Route::post('/register/store', [MainController::class,'store'])->name('register.store');
+Route::get('/registered/courses/list', [MainController::class,'courses_list'])->name('registered.courses.list');
 
 
 
