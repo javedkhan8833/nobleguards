@@ -12,7 +12,7 @@
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">{{$slider->name}}</h2>
                     <p class="animate__animated animate__fadeInUp">{{$slider->description}}</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
+                        <a href="{{route('register.index')}}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
                 </div>
             </div>
             @endforeach
@@ -67,7 +67,7 @@
         <div class="row" data-aos="zoom-in">
           <button type="button" class=" btn btn-lg  ">
                 <!-- <p>Enrol on a course today</p> -->
-                <a class="cta-btn align-middle px-sm-5 " href="#">Enrol on a Course today</a>
+                <a class="cta-btn align-middle px-sm-5 " href="{{route('register.index')}}">Enrol on a Course today</a>
                 {{-- <a class="cta-btn align-middle px-sm-5 " href="#">Register in a Course today</a> --}}
           </button>
         </div>

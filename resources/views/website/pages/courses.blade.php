@@ -13,7 +13,7 @@
         <div class="row" data-aos="zoom-in">
           <button type="button" class=" btn btn-lg  ">
                 <!-- <p>Enrol on a course today</p> -->
-                <a class="cta-btn align-middle px-sm-5 " href="#">Enrol on a Course today</a>
+                <a class="cta-btn align-middle px-sm-5 " href="{{route('register.index')}}">Enrol on a Course today</a>
                 {{-- <a class="cta-btn align-middle px-sm-5 " href="#">Register in a Course today</a> --}}
           </button>
         </div>
@@ -55,7 +55,9 @@
                             @endif
                         @endforeach
                       </ol>
-                      <button class="flip-box-button">Register Interest</button>
+                      <a href="{{route('register.index')}}" class="flip-box-button">
+                      Register Interest
+                    </a>
                   </div>
                 </div>
           </div>

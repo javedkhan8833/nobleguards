@@ -7,6 +7,7 @@ use App\Models\about;
 use App\Models\Refer;
 use App\Models\Course;
 use App\Models\Slider;
+use App\Models\Register;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -77,6 +78,43 @@ class MainController extends Controller
     {
         return view('website.pages.register');
     }
+    public function store(Request $request)
+    {
+        $data = $request->validate([
+                'name' =>'required',
+                'sure_name' =>'required',
+                'phone_number'=>'required',
+                'email' =>'required',
+                'city'=>'required',
+                'gender'=>'required',
+                'course'=>'required',
+                'address'=>'required',
+            ]);
+            $data = [
+                'name' => $request->name,
+                'sure_name'=>$request->sure_name,
+                'email' => $request->email,
+                'phone_number' => $request->phone_number,
+                'city'=>$request->city,
+                'gender'=>$request->gender,
+                'course'=>$request->course,
+                'address'=>$request->address,
+            ];
+            $query = Register::create($data);
+            if($query)
+            {
+                return back()->with('success', 'Registered Successfully');
+            }
+            else{
+                return back()->with('error','something went wrong');
+            }
 
+    }
+    public function courses_list()
+        {
+            $data = Register::all();
+            return view('admin.pages.courses.courseslist',compact('data'));
+
+        }
 
 }

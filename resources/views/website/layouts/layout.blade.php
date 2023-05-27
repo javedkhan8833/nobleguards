@@ -6,6 +6,42 @@
 @include('website.includes.head')
 
 <body>
+    {{-- toaster code --}}
+    @php
+
+        $success = session('success');
+        $warning = session('warning');
+        $danger = session('danger');
+        if (session()->has('success')) {
+            echo '<script>
+                toastr.success("' . $success . '");
+            </script>';
+        }
+        if (session()->has('warning')) {
+            echo '<script>
+                toastr.warning("' . $warning . '");
+            </script>';
+        }
+        if (session()->has('danger')) {
+            echo '<script>
+                toastr.error("' . $danger . '");
+            </script>';
+        }
+
+        $errors = '';
+        if (session()->has('errors')) {
+            foreach (session('errors')->all() as $error) {
+                $errors .= '<p>' . $error . '</p>';
+            }
+            echo '<script>
+                toastr.error("' . $errors . '");
+            </script>';
+        }
+        session()->forget('success');
+        session()->forget('warning');
+        session()->forget('danger');
+    @endphp
+    {{-- toaster code --}}
 
     <!-- ======= Top Bar ======= -->
     <div id="topbar" class="fixed-top d-flex align-items-center ">
