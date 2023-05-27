@@ -40,10 +40,11 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              Luton, NY 535022<br>
+              Argyle House, 76 Joel St <br>
+              Northwood HA6 1LL<br>
               United kingdom <br><br>
-              <strong>Phone:</strong> +44 7366 565595<br>
+              <strong>Phone:</strong> +44 7916 627255<br>
+              <strong>Phone:</strong> +44 7767 818809<br>
               <strong>Email:</strong> info@nobleguards.co.uk<br>
             </p>
 

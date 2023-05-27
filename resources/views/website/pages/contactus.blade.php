@@ -33,7 +33,7 @@
  <!-- ==== map section======= -->
   <!-- <section id="cta"> -->
     <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.960980404812!2d-0.42167899999999997!3d51.8799248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764922ff71a65f%3A0x94cb763190381731!2sLegends%20MMA%20%26%20Fitness%20Centre!5e0!3m2!1sen!2s!4v1684902018648!5m2!1sen!2s"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.283896275893!2d-0.41270732422843914!3d51.59968660395839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766b625d8a0b53%3A0x71dbafee68db40fd!2sArgyle%20House%2C%2076%20Joel%20St%2C%20Northwood%20HA6%201LL%2C%20UK!5e0!3m2!1sen!2s!4v1685045510659!5m2!1sen!2s"
                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 <!-- </section> -->
@@ -55,19 +55,20 @@
                     <div class="address">
                         <i class="bi bi-geo-alt"></i>
                         <h4>Location:</h4>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <p>Argyle House, 76 Joel St, Northwood HA6 1LL</p>
                     </div>
 
                     <div class="email">
                         <i class="bi bi-envelope"></i>
                         <h4>Email:</h4>
-                        <p>info@example.com</p>
+                        <p> info@nobleguards.co.uk</p>
                     </div>
 
                     <div class="phone">
                         <i class="bi bi-phone"></i>
                         <h4>Call:</h4>
-                        <p>+1 5589 55488 55s</p>
+                        <p>+44 7916 627255</p>
+                        <p>+44 7767 818809</p>
                     </div>
 
                 </div>
