@@ -10,15 +10,16 @@
     <!--- Sidemenu -->
     <ul class="side-nav">
 
-        <li class="side-nav-title side-nav-item">Navigation</li>
+        <li class="side-nav-title side-nav-item">Admin Dashobaord</li>
 
         <li class="side-nav-item">
             <a data-bs-toggle="collapse" href="#sidebarDashboards" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                <a href="{{route('dashboard')}}" class="side-nav-link">
                 <i class="uil-home-alt"></i>
-                <span class="badge bg-info rounded-pill float-end">4</span>
+                {{-- <span class="badge bg-info rounded-pill float-end">4</span> --}}
                 <span> Dashboards </span>
             </a>
-            <div class="collapse" id="sidebarDashboards">
+            {{-- <div class="collapse" id="sidebarDashboards">
                 <ul class="side-nav-second-level">
                     <li>
                         <a href="dashboard-analytics.html">Analytics</a>
@@ -33,7 +34,7 @@
                         <a href="dashboard-projects.html">Refered Students</a>
                     </li>
                 </ul>
-            </div>
+            </div> --}}
         </li>
 
         <li class="side-nav-title side-nav-item">System Administration</li>
