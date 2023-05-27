@@ -25,14 +25,10 @@ use App\Http\Controllers\website\SubscriptionController;
 |
 */
 
-
-Route::get("testing",function(){
-    return "farhd";
-});
 Route::get('admin/login',function(){
     return view('admin.pages.user.login');
 })->name('admin.login');
-Route::post('/login',[HomeController::class,'authenticate'])->name('login');
+Route::post('/authenticated',[HomeController::class,'authenticate'])->name('login');
 Route::middleware('auth')->prefix('admin')->group(function(){
     Route::get('/dashboard',[HomeController::class,'dashboard'])->name('dashboard');
     Route::post('/logout', [HomeController::class,'logout'])->name('logout');
