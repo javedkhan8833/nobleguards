@@ -1,7 +1,15 @@
 @extends('website.layouts.layout')
 
 @section('content')
-
+<section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner mt-5" role="listbox" >
+          <img class="mt-4" src="{{asset('website\assets\img\security-guard3.jpg')}}" alt="jd[ogfjasjf[aj[fgja[j" width="100%" class="img-responsive">
+        </div>
+     </div>
+    </div>
+</section>
 <!-- ======= Book A Table Section ======= -->
 <section id="book-a-table" class="book-a-table">
     <div class="container">
@@ -11,7 +19,7 @@
         <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
       </div>
 
-      <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+      <form action="" method="post" role="form" class="form-css">
         <div class="row">
           <div class="col-lg-4 col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -47,7 +55,7 @@
           <div class="error-message"></div>
           <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
+        <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
       </form>
 
     </div>

@@ -71,5 +71,10 @@ class MainController extends Controller
     {
         return view('website.pages.terms');
     }
+    public function reg_form()
+    {
+        return view('website.pages.register');
+    }
+
 
 }

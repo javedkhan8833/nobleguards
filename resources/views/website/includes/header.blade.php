@@ -35,7 +35,7 @@
           </li>
           <li>
             <button class="btn btn-rounded reg-btn">
-            <a href="{{route('firstpage')}}">Register/Login</a>
+            <a href="{{route('register.index')}}">Register</a>
             </button>
           </li>
           </ul>

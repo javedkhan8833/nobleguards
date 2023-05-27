@@ -87,6 +87,7 @@ Route::get('/aboutus/detail',[AboutusController::class,'detail'])->name('aboutus
 Route::post('/subscribe', [SubscriptionController::class,'store'])->name('subscribe');
 Route::get('/terms', [MainController::class,'terms'])->name('terms');
 Route::get('/slider', [MainController::class,'slider'])->name('slider');
+Route::get('/register/form', [MainController::class,'reg_form'])->name('register.index');
 
 
 
