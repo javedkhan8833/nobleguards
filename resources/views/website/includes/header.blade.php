@@ -7,7 +7,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{route('main')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{route('main')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{route('about')}}">About</a></li>
           {{-- <li><a class="nav-link scrollto" href="{{route('services')}}">Services</a></li> --}}
           {{-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> --}}
@@ -35,7 +35,7 @@
           </li>
           <li>
             <button class="btn btn-rounded reg-btn">
-            <a href="{{route('firstpage')}}">Register/Login</a>
+            <a href="{{route('register.index')}}">Register</a>
             </button>
           </li>
           </ul>

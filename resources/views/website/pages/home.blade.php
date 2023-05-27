@@ -7,8 +7,8 @@
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
             <!-- Slide 1 -->
-            @foreach ($sliders as $slider)
-            <div class="carousel-item active">
+            @foreach ($sliders as $key=>$slider)
+            <div class="carousel-item {{ $key==0 ? 'active' : ''  }}">
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">{{$slider->name}}</h2>
                     <p class="animate__animated animate__fadeInUp">{{$slider->description}}</p>
@@ -16,6 +16,7 @@
                 </div>
             </div>
             @endforeach
+
 
             <!-- Slide 2 -->
             {{-- <div class="carousel-item">
@@ -171,7 +172,7 @@
 
 <div class="clients-slider swiper">
   <div class="swiper-wrapper align-items-center">
-    <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt=""></div>
+    <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt="/lnvndfvnfdvnlsdvfnlsnvl\/sdknv/ lorem25"></div>
     <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
     <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-3.png')}}" class="img-fluid" alt=""></div>
     <div class="swiper-slide"><img src="{{asset('assets/img/clients/client-4.png')}}" class="img-fluid" alt=""></div>
@@ -524,7 +525,7 @@
         </div>
     </section><!-- End Frequently Asked Questions Section -->
 
+    @endsection
 
 
     {{-- home section end --}}
-@endsection

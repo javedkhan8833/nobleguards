@@ -17,7 +17,7 @@ class MainController extends Controller
         $about = about::first();
         $faqs  = Faq::all();
         $sliders = Slider::all();
-
+        // dd($faqs);
         // if($about->count() == 0)
         // {
         //     return view('website.pages.home');
@@ -31,14 +31,14 @@ class MainController extends Controller
     public function about()
     {
         $aboutus = about::first();
-        if($aboutus->count() == 0)
-        {
-            return view('website.pages.about',compact('aboutus'));
-        }
-        else
-        {
-            return view('website.pages.about',compact('aboutus'));
-        }
+        return view('website.pages.about',compact('aboutus'));
+        // if($aboutus->count() == 0)
+        // {
+        //     return view('website.pages.about',compact('aboutus'));
+        // }
+        // else
+        // {
+            // }
     }
     public function contact()
     {
@@ -73,5 +73,10 @@ class MainController extends Controller
     {
         return view('website.pages.terms');
     }
+    public function reg_form()
+    {
+        return view('website.pages.register');
+    }
+
 
 }

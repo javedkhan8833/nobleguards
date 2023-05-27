@@ -26,6 +26,9 @@ use App\Http\Controllers\website\SubscriptionController;
 */
 
 
+Route::get("testing",function(){
+    return "farhd";
+});
 Route::get('admin/login',function(){
     return view('admin.pages.user.login');
 })->name('admin.login');
@@ -67,7 +70,7 @@ Route::get('/course/list',[CoursesController::class,'index'])->name('admin.cours
 Route::get('/course/create',[CoursesController::class,'create'])->name('admin.course.create');
 Route::post('/course/store',[CoursesController::class,'store'])->name('admin.course.store');
 // Route::get('/admin/course/edit/{id}',[CoursesController::class,'edit'])->name('admin.course.edit');
-// Route::get('/admin/course/delete/{id}',[CoursesController::class,'delete'])->name('admin.course.delete');
+Route::POST('/admin/course/delete/{id}',[CoursesController::class,'delete'])->name('admin.course.delete');
 });
 //website routes
 Route::get('/', [MainController::class,'index'])->name('main');
@@ -84,6 +87,7 @@ Route::get('/aboutus/detail',[AboutusController::class,'detail'])->name('aboutus
 Route::post('/subscribe', [SubscriptionController::class,'store'])->name('subscribe');
 Route::get('/terms', [MainController::class,'terms'])->name('terms');
 Route::get('/slider', [MainController::class,'slider'])->name('slider');
+Route::get('/register/form', [MainController::class,'reg_form'])->name('register.index');
 
 
 

@@ -26,11 +26,4 @@
     <!-- Template Main CSS File -->
     <link href="{{asset('website/assets/css/style.css')}}?v={{time()}}" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- =======================================================
-    * Template Name: Anyar
-    * Updated: Mar 10 2023 with Bootstrap v5.2.3
-    * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
   </head>

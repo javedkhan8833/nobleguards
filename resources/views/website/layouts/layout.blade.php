@@ -12,7 +12,7 @@
         <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope-fill"></i><a href="mailto:info@nobleguards.co.uk">info@nobleguards.co.uk</a>
-                <i class="bi bi-phone-fill phone-icon"></i> +44 7366 565595
+                <i class="bi bi-phone-fill phone-icon"></i>+44 7916 627255, +44 7767 818809
             </div>
         </div>
     </div>

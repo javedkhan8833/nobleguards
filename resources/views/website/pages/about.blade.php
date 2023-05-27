@@ -3,13 +3,13 @@
 <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <img src="{{asset('website/img/slide/slide-1.jpg')}}" alt="">
+        <div class="carousel-inner mt-5" role="listbox" >
+          <img class="mt-4" src="{{asset('website\assets\img\security-guard4.jpg')}}" alt="" width="100%">
         </div>
      </div>
     </div>
 </section>
-<section id="cta" class="cta">
+<!-- <section id="cta" class="cta">
     <div class="container">
 
         {{-- <div class="row" data-aos="zoom-in">
@@ -19,7 +19,7 @@
             </div>
         </div> --}}
 
-    </div>
+    </div> -->
 </section>
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
