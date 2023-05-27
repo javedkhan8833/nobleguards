@@ -6,6 +6,7 @@ use App\Models\Faq;
 use App\Models\about;
 use App\Models\Refer;
 use App\Models\Course;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,6 +16,7 @@ class MainController extends Controller
     {
         $about = about::first();
         $faqs  = Faq::all();
+        $sliders = Slider::all();
         // dd($faqs);
         // if($about->count() == 0)
         // {
@@ -24,7 +26,7 @@ class MainController extends Controller
         // {
         //     return view('website.pages.home',compact('about'));
         // }
-        return view('website.pages.home',compact('about','faqs'));
+        return view('website.pages.home',compact('about','faqs','sliders'));
     }
     public function about()
     {
