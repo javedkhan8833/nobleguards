@@ -16,8 +16,11 @@
 
       <div class="section-title">
       <div class="container">
+
+
+
     <div class="section-title pt-5">
-        <h2>Register in Course</h2>
+        <h2>Contact Us</h2>
     </div>
 
 
