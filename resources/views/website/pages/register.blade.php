@@ -4,12 +4,13 @@
 <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner" >
-          <img class="mt-4" src="{{asset('website\assets\img\register3.jpeg')}}" alt="jd[ogfjasjf[aj[fgja[j" width="100%" class="img-responsive">
+        <div class="carousel-inner mt-5" role="listbox" >
+          <img class="mt-4" src="{{asset('website\assets\img\register3a.jpeg')}}" alt="" width="100%">
         </div>
      </div>
     </div>
 </section>
+
 <!-- ======= Book A Table Section ======= -->
 <section id="book-a-table" class="book-a-table">
     <div class="container mt-5">
