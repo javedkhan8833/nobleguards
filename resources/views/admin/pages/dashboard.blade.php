@@ -1,8 +1,6 @@
 @extends('admin.layouts.layout')
 @section('content')
 <!-- Start Content-->
-ws sa wakram
-
 
 
 
