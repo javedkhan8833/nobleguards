@@ -11,7 +11,8 @@
     </div>
 </section>
 <!-- ======= Book A Table Section ======= -->
-<section id="book-a-table" class="book-a-table">
+<section id="contact" class="contact">
+    <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
     <div class="container">
 
       <div class="section-title">
