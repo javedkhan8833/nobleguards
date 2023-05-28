@@ -63,8 +63,28 @@
           <div class="error-message"></div>
           <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
-      </form>
+        <div class="row">
+            <div class="col-md-6 form-group mt-3">
+                <select name="course" id="" class="form-control">
+                    <option>Select Course</option>
+                    <option value="course one">Door Supervision</option>
+                    <option value="course two">Door Supervison Top-Up</option>
+                    <option value="">Level 3 Emergency First Aid</option>
+                    <option value="Emergency First Aid at Work + Door Supervision">Emergency First Aid at Work + Door Supervision +Combination of EFAW and DS</option>
+                    <option value="Security Guard">Security Guard</option>
+                    <option value="Emergency First Aid at Work + Security Guard">Emergency First Aid at Work + Security Guard</option>
+                    <option value="EFAW + Security Officer">EFAW + Security Officer</option>
+                </select>
+            </div>
+                <div class="col-md-6 form-group mt-3">
+                    <input type="text" class="form-control" name="address"
+                    placeholder="Completer Address" required>
+                </div>
+
+        </div>
+
+        <div class="text-center mt-4"><button type="submit" class="btn btn-primary">Send Message</button></div>
+    </form>
 
     </div>
   </section><!-- End Book A Table Section -->
