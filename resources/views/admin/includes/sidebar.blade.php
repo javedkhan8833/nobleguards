@@ -120,7 +120,7 @@
                         <a href="{{route('admin.course.index')}}">List Courses</a>
                     </li>
                     <li>
-                        <a href="{{route('registered.courses.list')}}">Registered Courses</a>
+                        <a href="{{route('registered.courses.list')}}">Registered Memers</a>
                     </li>
                 </ul>
             </div>

@@ -33,6 +33,7 @@ Route::middleware('auth')->prefix('admin')->group(function(){
     Route::get('/dashboard',[HomeController::class,'dashboard'])->name('dashboard');
     Route::post('/logout', [HomeController::class,'logout'])->name('logout');
     //<----- admin dashboard Routes-------->
+
     //about us routes
     Route::get('/about/index', [AboutController::class,'index'])->name('admin.about.index');
     Route::get('/about/create', [AboutController::class,'create'])->name('admin.about.create');
