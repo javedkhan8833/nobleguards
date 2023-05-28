@@ -4,9 +4,9 @@
 <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        {{-- <div class="carousel-inner mt-5" role="listbox" >
-          <img class="mt-4" src="{{asset('website\assets\img\security-guard3.jpg')}}" width="100%" class="img-responsive">
-        </div> --}}
+        <div class="carousel-inner mt-5" role="listbox" >
+          <img class="mt-4" src="{{asset('website\assets\img\register3a.jpeg')}}" alt="" width="100%">
+        </div>
      </div>
     </div>
 </section>
@@ -14,11 +14,11 @@
 <section id="contact" class="contact">
     <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
     <div class="container">
-
-      <div class="section-title">
-        <h2>Book a <span>Table</span></h2>
-        <h1>Register in Course </h1>
-      </div>
+      <div class="row mt-5" data-aos="zoom-in">
+          <div class="section-title">
+            <h2>Register in Course </h2>
+        </div>
+    </div>
 
       <form action="{{route('register.store')}}" method="post" role="form" class="form-css">
         @csrf
@@ -89,7 +89,7 @@
 
         </div>
 
-        <div class="text-center mt-4"><button type="submit" class="btn btn-primary">Send Message</button></div>
+        <div class="text-center mt-4"><button type="submit" class="btn btn-light btn-outline-primary">Send Message</button></div>
     </form>
 
     </div>

@@ -9,18 +9,6 @@
      </div>
     </div>
 </section>
-<!-- <section id="cta" class="cta">
-    <div class="container">
-
-        {{-- <div class="row" data-aos="zoom-in">
-
-            <div class="section-title">
-                <h2>Co</h2>
-            </div>
-        </div> --}}
-
-    </div> -->
-</section>
 <section id="about" class="about">
     <div class="container" data-aos="fade-up">
 
