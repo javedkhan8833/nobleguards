@@ -81,13 +81,12 @@
     <section id="icon-boxes" class="icon-boxes">
         <div class="container">
 
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
                     <div class="icon-box">
                         <div class="icon"><i class="bx bxl-dribbble"></i></div>
                         <h4 class="title"><a href="">SIA Linked Qualifications</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident</p>
+                        <p class="description">As of April 1, Door Supervision course is a 6 day course instead of a 4 day course. Moreover, you must have a First Aid Qualification before you can take the training. This should be an Emergency First Aid at Work (EFAW) certificate or higher.</p>
                     </div>
                 </div>
 
@@ -121,7 +120,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
         </div>
     </section><!-- End Icon Boxes Section -->
