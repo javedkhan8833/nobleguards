@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\admin;
 
 use App\Models\Refer;
+use App\Models\Course;
 use App\Models\Contact;
+use App\Models\Register;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -30,7 +32,11 @@ class HomeController extends Controller
     }
     public function dashboard()
     {
-        return view('admin.pages.dashboard');
+        $totalCourses = Course::count();
+        $registeredMembers = Register::count();
+        $contacted = Contact::count();
+        $refered_students = Refer::count();
+        return view('admin.pages.dashboard',compact('totalCourses','registeredMembers','contacted','refered_students'));
     }
     public function logout(Request $request)
     {
