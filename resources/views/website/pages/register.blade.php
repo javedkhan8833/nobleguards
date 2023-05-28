@@ -72,10 +72,13 @@
             <div class="col-md-6 form-group mt-3">
                 <select name="course" id="" class="form-control">
                     <option>Select Course</option>
-                    <option value="course one">one</option>
-                    <option value="course two">two</option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="course one">Door Supervision</option>
+                    <option value="course two">Door Supervison Top-Up</option>
+                    <option value="">Level 3 Emergency First Aid</option>
+                    <option value="Emergency First Aid at Work + Door Supervision">Emergency First Aid at Work + Door Supervision +Combination of EFAW and DS</option>
+                    <option value="Security Guard">Security Guard</option>
+                    <option value="Emergency First Aid at Work + Security Guard">Emergency First Aid at Work + Security Guard</option>
+                    <option value="EFAW + Security Officer">EFAW + Security Officer</option>
                 </select>
             </div>
                 <div class="col-md-6 form-group mt-3">
