@@ -4,7 +4,7 @@
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner mt-5" role="listbox" >
-          <img class="mt-4" src="{{asset('website\assets\img\security-guard4.jpg')}}" alt="" width="100%">
+          <img class="mb-4" src="{{asset('website\assets\img\sg.jpg')}}" alt="" width="100%">
         </div>
      </div>
     </div>
