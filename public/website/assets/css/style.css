@@ -171,6 +171,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   background: rgba(0, 0, 0, 0.1);
+  background-color: #044a7e;
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
@@ -477,13 +478,14 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   position: relative;
   background: url("../img/first-aid.jpg") top center;
   background-size: cover;
   position: relative;
-  margin-bottom: -90px;
+  /* margin-top: 190px; */
+  /* margin-bottom: 90px; */
   z-index: 99;
   transition: 0.3s;
 }
