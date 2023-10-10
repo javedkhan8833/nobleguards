@@ -224,281 +224,9 @@
         </div>
     </section><!-- End Why Us Section -->
 
-    <!-- ======= Services Section ======= -->
-    {{-- <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box">
-                        <i class="bi bi-card-checklist"></i>
-                        <h4><a href="#">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                            occaecati cupiditate non provident</p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box">
-                        <i class="bi bi-bar-chart"></i>
-                        <h4><a href="#">Dolor Sitema</a></h4>
-                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat tarad limino ata</p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-box">
-                        <i class="bi bi-binoculars"></i>
-                        <h4><a href="#">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur</p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box">
-                        <i class="bi bi-brightness-high"></i>
-                        <h4><a href="#">Nemo Enim</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum</p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon-box">
-                        <i class="bi bi-calendar4-week"></i>
-                        <h4><a href="#">Magni Dolore</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque</p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
-                    <div class="icon-box">
-                        <i class="bi bi-briefcase"></i>
-                        <h4><a href="#">Eiusmod Tempor</a></h4>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                            nobis est eligendi</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section> --}}
-    <!-- End Services Section -->
-
-
-
-    <!-- ======= Portfoio Section ======= -->
-    {{-- <section id="portfolio" class="portfoio">
-<div class="container" data-aos="fade-up">
-
-<div class="section-title">
-  <h2>Portfoio</h2>
-  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-</div>
-
-<div class="row">
-  <div class="col-lg-12 d-flex justify-content-center">
-    <ul id="portfolio-flters">
-      <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-app">App</li>
-      <li data-filter=".filter-card">Card</li>
-      <li data-filter=".filter-web">Web</li>
-    </ul>
-  </div>
-</div>
-
-<div class="row portfolio-container">
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <img src="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>App 1</h4>
-      <p>App</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <img src="{{asset('assets/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>Web 3</h4>
-      <p>Web</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <img src="{{asset('assets/img/portfolio/portfolio-3.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>App 2</h4>
-      <p>App</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <img src="{{asset('assets/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>Card 2</h4>
-      <p>Card</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <img src="{{asset('assets/img/portfolio/portfolio-5.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>Web 2</h4>
-      <p>Web</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <img src="{{asset('assets/img/portfolio/portfolio-6.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>App 3</h4>
-      <p>App</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <img src="{{asset('assets/img/portfolio/portfolio-7.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>Card 1</h4>
-      <p>Card</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-7.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <img src="{{asset('assets/img/portfolio/portfolio-8.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>Card 3</h4>
-      <p>Card</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-8.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <img src="{{asset('assets/img/portfolio/portfolio-9.jpg')}}" class="img-fluid" alt="">
-    <div class="portfolio-info">
-      <h4>Web 3</h4>
-      <p>Web</p>
-      <a href="{{asset('assets/img/portfolio/portfolio-9.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-  </div>
-
-</div>
-
-</div>
-</section> --}}
-    <!-- End Portfoio Section -->
-
-    <!-- ======= Team Section ======= -->
-    {{-- <section id="team" class="team section-bg">
-<div class="container" data-aos="fade-up">
-
-<div class="section-title">
-  <h2>Team</h2>
-  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-</div>
-
-<div class="row">
-
-  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-    <div class="member d-flex align-items-start">
-      <div class="pic"><img src="{{asset('assets/img/team/team-1.jpg')}}" class="img-fluid" alt=""></div>
-      <div class="member-info">
-        <h4>Walter White</h4>
-        <span>Chief Executive Officer</span>
-        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-        <div class="social">
-          <a href=""><i class="ri-twitter-fill"></i></a>
-          <a href=""><i class="ri-facebook-fill"></i></a>
-          <a href=""><i class="ri-instagram-fill"></i></a>
-          <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-    <div class="member d-flex align-items-start">
-      <div class="pic"><img src="{{asset('assets/img/team/team-2.jpg')}}" class="img-fluid" alt=""></div>
-      <div class="member-info">
-        <h4>Sarah Jhonson</h4>
-        <span>Product Manager</span>
-        <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-        <div class="social">
-          <a href=""><i class="ri-twitter-fill"></i></a>
-          <a href=""><i class="ri-facebook-fill"></i></a>
-          <a href=""><i class="ri-instagram-fill"></i></a>
-          <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
-    <div class="member d-flex align-items-start">
-      <div class="pic"><img src="{{asset('assets/img/team/team-3.jpg')}}" class="img-fluid" alt=""></div>
-      <div class="member-info">
-        <h4>William Anderson</h4>
-        <span>CTO</span>
-        <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-        <div class="social">
-          <a href=""><i class="ri-twitter-fill"></i></a>
-          <a href=""><i class="ri-facebook-fill"></i></a>
-          <a href=""><i class="ri-instagram-fill"></i></a>
-          <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
-    <div class="member d-flex align-items-start">
-      <div class="pic"><img src="{{asset('assets/img/team/team-4.jpg')}}" class="img-fluid" alt=""></div>
-      <div class="member-info">
-        <h4>Amanda Jepson</h4>
-        <span>Accountant</span>
-        <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-        <div class="social">
-          <a href=""><i class="ri-twitter-fill"></i></a>
-          <a href=""><i class="ri-facebook-fill"></i></a>
-          <a href=""><i class="ri-instagram-fill"></i></a>
-          <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-</div>
-</section> --}}
-    <!-- End Team Section -->
-
-
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+<section id="faq" class="faq section-bg">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -507,25 +235,24 @@
 
             <div class="faq-list">
                 <ul>
-                    @foreach ($faqs as $faq)
                     <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+                        @foreach ($faqs as $faq)
                         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                        data-bs-target="#faq-list-1">{{$faq->title}}? <i
+                        data-bs-target="#faq-list-{{$faq->id}}">{{$faq->title}} <i
                         class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                        <div id="faq-list-{{$faq->id}}" class="collapse" data-bs-parent=".faq-list">
                             <p>
                                 {{$faq->description}}
                             </p>
                         </div>
+                        @endforeach
                     </li>
-                    @endforeach
                 </ul>
             </div>
 
         </div>
-    </section><!-- End Frequently Asked Questions Section -->
+</section>
+<!-- End Frequently Asked Questions Section -->
 
-    @endsection
 
-
-    {{-- home section end --}}
+@endsection

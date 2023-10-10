@@ -40,9 +40,9 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              Argyle House, 76 Joel St <br>
-              Northwood HA6 1LL<br>
-              United kingdom <br><br>
+              Argyle House, Joel Street <br>
+              Northwood London<br>
+              HA6 1NW <br><br>
               <strong>Phone:</strong> +44 7916 627255<br>
               <strong>Phone:</strong> +44 7767 818809<br>
               <strong>Email:</strong> info@nobleguards.co.uk<br>

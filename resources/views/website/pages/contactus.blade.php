@@ -13,7 +13,7 @@
     </div>
   </section> --}}
 
- 
+
 
 <!-- ======= Cta Section ======= -->
 <section id="cta" class="cta">
@@ -55,7 +55,9 @@
                     <div class="address">
                         <i class="bi bi-geo-alt"></i>
                         <h4>Location:</h4>
-                        <p>Argyle House, 76 Joel St, Northwood HA6 1LL</p>
+                        <p>Northwood HA6 1LL Argyle House, Joel Street
+                            Northwood London
+                            HA6 1NW</p>
                     </div>
 
                     <div class="email">
