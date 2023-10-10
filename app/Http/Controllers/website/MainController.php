@@ -45,6 +45,12 @@ class MainController extends Controller
     {
         return view('website.pages.contactus');
     }
+
+    public function faq()
+    {
+        $faqs  = Faq::all();
+        return view('website.pages.faq',compact('faqs'));
+    }
     public function selectCourse()
     {
         $data = Course::with(["dates"])->get();

@@ -73,6 +73,7 @@ Route::POST('/admin/course/delete/{id}',[CoursesController::class,'delete'])->na
 Route::get('/', [MainController::class,'index'])->name('main');
 Route::get('/about', [MainController::class,'about'])->name('about');
 Route::get('/contact', [MainController::class,'contact'])->name('contact');
+Route::get('/faq', [MainController::class,'faq'])->name('faq');
 Route::get('/courses', [MainController::class,'selectCourse'])->name('courses');
 Route::get('/initial', [MainController::class,'initial'])->name('firstpage');
 Route::get('/refer/friend', [MainController::class,'referFriend'])->name('refer');

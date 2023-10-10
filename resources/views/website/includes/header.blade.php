@@ -31,7 +31,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> --}}
-          <li><a class="nav-link scrollto" href="{{route('contact')}}">Find us</a>
+          <li><a class="nav-link scrollto" href="{{route('faq')}}">FAQs</a>
+            <li><a class="nav-link scrollto" href="{{route('contact')}}">Find us</a>
           </li>
           <li>
             <button class="btn btn-rounded reg-btn">
