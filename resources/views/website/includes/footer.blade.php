@@ -31,6 +31,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('main')}}">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('about')}}">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('courses')}}">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route('faq')}}">FAQs</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}">Find us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route('terms')}}">Terms and Conditions</a></li>
               {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> --}}
