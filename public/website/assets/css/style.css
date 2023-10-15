@@ -1476,11 +1476,14 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
-.faq .faq-list {
-  /* border: 2px solid #1c66a7; */
-  padding: 0 100px;
-  /* border-radius: 30px; */
+#faq {
+  margin-top:40px;
 }
+.faq .faq-list {
+    /* border: 2px solid #1c66a7; */
+    padding: 0 100px;
+    /* border-radius: 30px; */
+  }
 /* #faq {
   background-color: #ffffff;
 } */

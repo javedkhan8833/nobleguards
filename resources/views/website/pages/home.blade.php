@@ -224,7 +224,7 @@
     </section><!-- End Why Us Section -->
 
         <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq section-bg">
+        <section  class="faq section-bg">
           <div class="container" data-aos="fade-up">
             <div class="section-title">
               <h2>Frequently Asked Questions</h2>

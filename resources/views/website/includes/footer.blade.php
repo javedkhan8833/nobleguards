@@ -10,7 +10,7 @@
           <div class="col-lg-6">
             <form action="{{route('subscribe')}}" method="post" id="subscription-form">
                 @csrf
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email" id="semail"><input type="submit" value="Subscribe">
             </form>
             <div id="success-message" style="display: block; font-size:20px;"></div>
             <div class="print-error-msg" style="display:none">
@@ -81,6 +81,7 @@
     </div>
   </footer>
 
+  {{-- subcription code here --}}
   <script>
     $(document).ready(function() {
         $('#subscription-form').submit(function(event) {
@@ -99,6 +100,8 @@
                     if($.isEmptyObject(response.error)){
                         $('#success-message').text(response.message);
                         $('#success-message').show();
+                        $('#success-message').fadeOut();
+                        $('#semail').val('');
                 }else{
                     printErrorMsg(response.error);
                 }

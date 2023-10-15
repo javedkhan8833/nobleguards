@@ -10,8 +10,6 @@
           <li><a class="nav-link scrollto" href="{{route('main')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="{{route('about')}}">About</a></li>
           <li><a class="nav-link scrollto" href="{{route('courses')}}">Courses</a></li>
-          <li><a class="nav-link scrollto" href="{{route('faq')}}">FAQs</a></li>
-
           <li><a class="nav-link scrollto" href="{{route('faq')}}">FAQs</a>
             <li><a class="nav-link scrollto" href="{{route('contact')}}">Find us</a>
           </li>
