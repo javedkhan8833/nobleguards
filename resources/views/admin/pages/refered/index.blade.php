@@ -9,7 +9,7 @@
                     <li class="breadcrumb-item active">FAQs</li>
                 </ol>
             </div>
-            <h4 class="page-title">FAQs</h4>
+            <h4 class="page-title">Refered Student's</h4>
         </div>
     </div>
 </div>

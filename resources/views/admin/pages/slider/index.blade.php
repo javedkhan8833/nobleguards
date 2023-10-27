@@ -45,6 +45,9 @@
                               Name
                             </th>
                             <th>
+                                Title
+                              </th>
+                            <th>
                               Description
                             </th>
                             <th colspan="2">
@@ -58,6 +61,7 @@
                             <tr>
                                 <td>{{ $value->id }}</td>
                                 <td>{{ $value->name }}</td>
+                                <td>{{ $value->title }}</td>
                                 <td>{{$value->description }}</td>
                                 {{-- <td><img src="{{asset('storage/sliders'.$value->image)}}" width="50px" height="50px"alt="" /></td> --}}
 

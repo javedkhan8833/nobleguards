@@ -10,7 +10,7 @@ class AboutusController extends Controller
 {
     public function detail()
     {
-        $aboutus =about::first();
+        $aboutus = about::first();
         if($aboutus->count() == 0)
         {
             // return view('website.pages.home');

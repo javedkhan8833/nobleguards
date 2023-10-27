@@ -11,6 +11,7 @@
             <div class="carousel-item {{ $key==0 ? 'active' : ''  }}">
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">{{$slider->name}}</h2>
+                    <h3 class="animate__animated animate__fadeInDown" style="color:white">{{$slider->title}}</h3>
                     <p class="animate__animated animate__fadeInUp">{{$slider->description}}</p>
                         <a href="{{route('register.index')}}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Register Now</a>
                 </div>
@@ -221,32 +222,6 @@
             </div>
 
         </div>
-    </section><!-- End Why Us Section -->
-
-        <!-- ======= Frequently Asked Questions Section ======= -->
-        <section  class="faq section-bg">
-          <div class="container" data-aos="fade-up">
-            <div class="section-title">
-              <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="faq-list">
-              <ul>
-                @foreach ($faqs as $faq)
-                <li data-aos="fade-up" data-aos-delay="500">
-                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-{{$faq->id}}" class="collapsed">{{$faq->title}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="faq-list-{{$faq->id}}" class="collapse" data-bs-parent=".faq-list">
-                    <p>
-                        {{$faq->description}}
-                    </p>
-                  </div>
-                </li>
-                @endforeach
-              </ul>
-            </div>
-
-          </div>
-        </section>
-        <!-- End Frequently Asked Questions Section -->
-
-
+    </section>
+    <!-- End Why Us Section -->
 @endsection

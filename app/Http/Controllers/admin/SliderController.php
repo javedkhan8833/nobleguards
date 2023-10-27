@@ -23,12 +23,14 @@ class SliderController extends Controller
 
         $validation = $request->validate([
             'name'=>'required',
+            'title'=>'required',
             'description'=>'required',
             // 'image'=>'required'
         ]);
 
         $data = [
             'name'=>$request->name,
+            'title'=>$request->title,
             'description'=>$request->description,
             // 'created_at'=>date('Y-m-d H:i:s'),
             // 'updated_at'=>date('Y-m-d H:i:s')
@@ -53,6 +55,7 @@ class SliderController extends Controller
     {
         $data = $request->validate([
             'name'=>'required',
+            'title'=>'required',
             'description'=>'required',
         ]);
            $query = Slider::where('id',$id)->update($data);

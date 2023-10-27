@@ -9,7 +9,7 @@
                     <li class="breadcrumb-item active">Contacts</li>
                 </ol>
             </div>
-            <h4 class="page-title">Contacted Trainers Contact Details</h4>
+            <h4 class="page-title">Trainees Contact Details</h4>
         </div>
     </div>
 </div>

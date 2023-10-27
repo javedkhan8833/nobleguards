@@ -36,6 +36,13 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3">
+                                        <label for="simpleinput" class="form-label">Slider Title</label>
+                                        <input type="text" name="title" value="{{$edit->title}}" id="simpleinput" class="form-control">
+                                        @error('title')
+                                        <span class="text text-danger"> {{$message}}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="mb-3">
                                         <label for="example-textarea" class="form-label">Description</label>
                                         <textarea name="description" class="form-control" id="example-textarea" rows="5">{{$edit->description}}</textarea>
                                         @error('description')
