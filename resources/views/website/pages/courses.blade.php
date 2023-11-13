@@ -32,7 +32,8 @@
         @foreach ($data as  $value)
         <div class="box-item">
           <div class="flip-box">
-            <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+            {{-- <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');"> --}}
+                <div class="flip-box-front text-center" style="background-image: url({{asset('website/assets/img/download-1.jpg')}});">
               <div class="inner color-white">
                 <h3 class="flip-box-header">{{ $value->name }}</h3>
                   <p>{{ $value->title }}</p>
@@ -40,7 +41,7 @@
                   <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
             </div>
               </div>
-                <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+                <div class="flip-box-back text-center" style="background-image: url({{asset('website/assets/img/download-1.jpg')}});">
                   <div class="inner color-white">
                     <h3 class="flip-box-header">Price: &pound;{{$value->price }}</h3>
                       <p>Course Duration:{{$value->duration }}</p>
