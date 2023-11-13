@@ -91,7 +91,7 @@
 
 
                                 <td class="d-flex gap-2 pb-4">
-                                    <a href="{{ route('admin.faq.edit', $value->id) }}" class="action-icon"> <i
+                                    <a href="{{ route('admin.course.edit', $value->id) }}" class="action-icon"> <i
                                             class="mdi mdi-square-edit-outline"></i></a>
                                     <form action="{{ route('admin.course.delete', $value->id) }}" method="post">
                                         @csrf

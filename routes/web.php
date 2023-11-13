@@ -66,7 +66,8 @@ Route::post('/contacted/delete/{id}',[HomeController::class,'delete'])->name('ad
 Route::get('/course/list',[CoursesController::class,'index'])->name('admin.course.index');
 Route::get('/course/create',[CoursesController::class,'create'])->name('admin.course.create');
 Route::post('/course/store',[CoursesController::class,'store'])->name('admin.course.store');
-// Route::get('/admin/course/edit/{id}',[CoursesController::class,'edit'])->name('admin.course.edit');
+Route::get('/admin/course/edit/{id}',[CoursesController::class,'edit'])->name('admin.course.edit');
+Route::post('/admin/course/update/{id}',[CoursesController::class,'update'])->name('admin.course.update');
 Route::POST('/admin/course/delete/{id}',[CoursesController::class,'delete'])->name('admin.course.delete');
 });
 //website routes

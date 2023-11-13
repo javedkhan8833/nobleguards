@@ -98,21 +98,15 @@
                                                     <tr>
                                                         <th>&nbsp;</th>
                                                         <th>Select Date</th>
+                                                        <th><button class="btn btn-large btn-success add" type="button">Add</button> </th>
                                                     </tr>
                                                 </thead>
                                                 <tr class="participantRow">
                                                     <td>&nbsp;</td>
                                                     <td><input type="date" name="upcoming_date[]"  class="form-control upcomingdates"></td>
-                                                    {{-- <td>
-                                                        <select name="" id="" class="required-entry">
-                                                            <option value=""></option>
-                                                        </select>
-                                                    </td> --}}
                                                     <td><button class="btn btn-danger remove" type="button">Remove</button></td>
                                                 </tr>
-                                                <tr id="addButtonRow">
-                                                    <td colspan="4"><center><button class="btn btn-large btn-success add" type="button">Add</button></center></td>
-                                                </tr>
+
                                         </table>
                                     </div>
 
@@ -147,62 +141,72 @@
     /* Variables */
 
 var p = $("#participants").val();
-var row = $(".participantRow");
+var row = `<tr class="participantRow">
+                                                    <td>&nbsp;</td>
+                                                    <td><input type="date" name="upcoming_date[]"  class="form-control upcomingdates"></td>
+                                                    <td><button class="btn btn-danger remove" type="button">Remove</button></td>
+                                                </tr>`;
 
 /* Functions */
-function getP(){
-  p = $("#participants").val();
-}
+// function getP(){
+//   p = $("#participants").val();
+// }
 
-function addRow() {
-  row.clone(true, true).appendTo("#participantTable");
-}
+// function addRow() {
+//   row.clone(true, true).appendTo("#participantTable");
+// }
 
-function removeRow(button) {
-  button.closest("tr").remove();
-}
+// function removeRow(button) {
+//   button.closest("tr").remove();
+// }
+$(document).on('click','.remove',function(){
+// $('.remove').click(function(){
+
+$(this).closest('tr').remove();
+});
 /* Doc ready */
 $(".add").on('click', function () {
-  getP();
-  if($("#participantTable tr").length < 17) {
-    addRow();
-    var i = Number(p)+1;
-    $("#participants").val(i);
-  }
-  $(this).closest("tr").appendTo("#participantTable");
-  if ($("#participantTable tr").length === 3) {
-    $(".remove").hide();
-  } else {
-    $(".remove").show();
-  }
+    $("#participantTable").append(row);
+//   getP();
+//   if($("#participantTable tr").length < 17) {
+//     addRow();
+//     var i = Number(p)+1;
+//     $("#participants").val(i);
+//   }
+//   $(this).closest("tr").appendTo("#participantTable");
+//   if ($("#participantTable tr").length === 3) {
+//     $(".remove").hide();
+//   } else {
+//     $(".remove").show();
+//   }
 });
-$(".remove").on('click', function () {
-  getP();
-  if($("#participantTable tr").length === 3) {
-    //alert("Can't remove row.");
-    $(".remove").hide();
-  } else if($("#participantTable tr").length - 1 ==3) {
-    $(".remove").hide();
-    removeRow($(this));
-    var i = Number(p)-1;
-    $("#participants").val(i);
-  } else {
-    removeRow($(this));
-    var i = Number(p)-1;
-    $("#participants").val(i);
-  }
-});
-$("#participants").change(function () {
-  var i = 0;
-  p = $("#participants").val();
-  var rowCount = $("#participantTable tr").length - 2;
-  if(p > rowCount) {
-    for(i=rowCount; i<p; i+=1){
-      addRow();
-    }
-    $("#participantTable #addButtonRow").appendTo("#participantTable");
-  } else if(p < rowCount) {
-  }
-});
+// $(".remove").on('click', function () {
+//   getP();
+//   if($("#participantTable tr").length === 3) {
+//     //alert("Can't remove row.");
+//     $(".remove").hide();
+//   } else if($("#participantTable tr").length - 1 ==3) {
+//     $(".remove").hide();
+//     removeRow($(this));
+//     var i = Number(p)-1;
+//     $("#participants").val(i);
+//   } else {
+//     removeRow($(this));
+//     var i = Number(p)-1;
+//     $("#participants").val(i);
+//   }
+// });
+// $("#participants").change(function () {
+//   var i = 0;
+//   p = $("#participants").val();
+//   var rowCount = $("#participantTable tr").length - 2;
+//   if(p > rowCount) {
+//     for(i=rowCount; i<p; i+=1){
+//       addRow();
+//     }
+//     $("#participantTable #addButtonRow").appendTo("#participantTable");
+//   } else if(p < rowCount) {
+//   }
+// });
 </script>
 @endsection
